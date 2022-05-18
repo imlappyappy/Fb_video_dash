@@ -8,12 +8,12 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 680,
+          "rightColumn": 679,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1320,
+          "bottomRow": 1290,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -123,7 +123,7 @@
             {
               "widgetName": "Statbox1",
               "backgroundColor": "white",
-              "rightColumn": 11,
+              "rightColumn": 10,
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7b.svg",
@@ -139,7 +139,7 @@
               "isLoading": false,
               "animateLoading": true,
               "parentColumnSpace": 9.5625,
-              "leftColumn": 1,
+              "leftColumn": 0,
               "children": [
                 {
                   "widgetName": "Canvas1",
@@ -978,7 +978,7 @@
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
               "topRow": 8,
-              "bottomRow": 26,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1173,8 +1173,8 @@
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
                       "labelText": "Domain",
-                      "topRow": 8,
-                      "bottomRow": 13,
+                      "topRow": 10,
+                      "bottomRow": 15,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
@@ -1228,7 +1228,7 @@
             {
               "widgetName": "Love_stat",
               "backgroundColor": "white",
-              "rightColumn": 11,
+              "rightColumn": 10,
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7b.svg",
@@ -1244,7 +1244,7 @@
               "isLoading": false,
               "animateLoading": true,
               "parentColumnSpace": 14.4375,
-              "leftColumn": 1,
+              "leftColumn": 0,
               "children": [
                 {
                   "widgetName": "Canvas3CopyCopyCopy",
@@ -2088,7 +2088,7 @@
               "animateLoading": true,
               "parentColumnSpace": 10.4375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 1,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.msiwvfftl6.data"
