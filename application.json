@@ -1,0 +1,17 @@
+{
+  "isPublic": false,
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#FBF4ED",
+  "icon": "family",
+  "slug": "fb-video-dashboard",
+  "evaluationVersion": 2,
+  "publishedModeThemeId": "620f72e0eb0278799e88c1f1",
+  "editModeThemeId": "620f72e0eb0278799e88c1f1",
+  "createdAt": {
+    "seconds": 1652785028,
+    "nanos": 640000000
+  },
+  "deleted": false
+}
