@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Total_anger_count",
+    "name": "Total_wow_count",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,12 +12,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Video_dashboard",
+    "pageId": "Facebook",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(cast(anger as decimal)) as Total_anger\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
+      "body": "SELECT SUM(cast(wow as decimal)) as Total_wow\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -38,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Video_dashboard_Total_anger_count",
+  "id": "Facebook_Total_wow_count",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_628381513cd70e097b623424"
+  "gitSyncId": "62837f843cd70e097b62341a_628382213cd70e097b623436"
 }

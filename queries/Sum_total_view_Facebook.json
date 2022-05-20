@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Top_viewed_videos",
+    "name": "Sum_total_view",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,12 +12,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Video_dashboard",
+    "pageId": "Facebook",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT title as title,\n      SUM(cast(total_video_views as decimal)) as Total_video_view\nFROM public.\"smg_dmp_fb_video_dashboard_unq\"\nWHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\nGROUP BY title\nORDER BY Total_video_view DESC\nLIMIT 10;"
+      "body": "SELECT SUM(cast(total_video_views as decimal)) as Total_video_view\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -38,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Video_dashboard_Top_viewed_videos",
+  "id": "Facebook_Sum_total_view",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_628385783cd70e097b62343a"
+  "gitSyncId": "62837f843cd70e097b62341a_628380b13cd70e097b623422"
 }

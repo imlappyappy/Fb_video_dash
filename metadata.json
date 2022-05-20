@@ -2,8 +2,8 @@
   "fileFormatVersion": 1,
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 1,
-  "publishedDefaultPageName": "Video_dashboard",
-  "unpublishedDefaultPageName": "Video_dashboard",
+  "publishedDefaultPageName": "Facebook",
+  "unpublishedDefaultPageName": "Facebook",
   "editModeTheme": {
     "name": "Classic",
     "isSystemTheme": true,

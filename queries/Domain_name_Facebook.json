@@ -12,7 +12,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Video_dashboard",
+    "pageId": "Facebook",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,7 +35,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Video_dashboard_Domain_name",
+  "id": "Facebook_Domain_name",
   "deleted": false,
   "gitSyncId": "62837f843cd70e097b62341a_628380543cd70e097b623420"
 }

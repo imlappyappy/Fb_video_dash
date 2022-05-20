@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Total_haha_count",
+    "name": "Top_trending_domain",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,14 +12,14 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Video_dashboard",
+    "pageId": "Facebook",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(cast(haha as decimal)) as Total_haha\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
+      "body": "SELECT name as name,\n      SUM(cast(total_video_views as decimal)) as Total_video_view\nFROM public.\"smg_dmp_fb_video_dashboard_unq\"\nWHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\nGROUP BY name\nORDER BY Total_video_view DESC\nLIMIT 10;"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -38,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Video_dashboard_Total_haha_count",
+  "id": "Facebook_Top_trending_domain",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_628381823cd70e097b623428"
+  "gitSyncId": "62837f843cd70e097b62341a_628389f33cd70e097b62343c"
 }
