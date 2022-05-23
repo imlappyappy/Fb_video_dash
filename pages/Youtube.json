@@ -1171,7 +1171,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 34,
+                      "leftColumn": 33,
                       "dynamicBindingPathList": [
                         {
                           "key": "options"
@@ -1253,7 +1253,7 @@
                       "key": "6f5u04yw78",
                       "onDateSelected": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\t\n})() }}",
                       "isRequired": false,
-                      "rightColumn": 31,
+                      "rightColumn": 32,
                       "defaultDate": "2022-01-01T00:00:00.000+05:30",
                       "widgetId": "fflxvshls5",
                       "isVisible": true,
@@ -1326,7 +1326,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultDate"
@@ -1388,7 +1388,7 @@
                       "isDisabled": false,
                       "key": "v5i7piex6e",
                       "isRequired": false,
-                      "rightColumn": 29,
+                      "rightColumn": 33,
                       "widgetId": "cjmg6fhfe2",
                       "isVisible": true,
                       "version": 1,
@@ -2224,7 +2224,7 @@
               "name": "Category_list",
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Channel_list",
@@ -2245,7 +2245,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10500
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Total_video_length",
@@ -2257,7 +2257,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Total_view_count",
@@ -2269,7 +2269,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Total_watch_hrs",
@@ -2281,7 +2281,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             }
           ],
           [
@@ -2295,7 +2295,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_trending_channels",
@@ -2307,7 +2307,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             }
           ],
           [
@@ -2333,7 +2333,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Top_10_video_by_watch_hrs",
@@ -2345,7 +2345,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Top_10_video_viewwise",
@@ -2357,7 +2357,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Total_Published_video_category",
@@ -2369,7 +2369,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Youtube_Total_published_videos_channel",
@@ -2381,7 +2381,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Youtube_Total_views_channelwise",
@@ -2393,7 +2393,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_percentage_watch_category",
@@ -2405,7 +2405,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_percentage_watch_channelwise",
@@ -2417,7 +2417,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_total_view_categorywise",
@@ -2429,7 +2429,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             }
           ]
         ],
