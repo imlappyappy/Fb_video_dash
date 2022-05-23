@@ -8,12 +8,12 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 570,
+          "bottomRow": 2270,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -24,11 +24,2478 @@
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": []
+          "children": [
+            {
+              "widgetName": "Statbox1CopyCopy2Copy1",
+              "backgroundColor": "white",
+              "rightColumn": 15,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "wgntwwqvrn",
+              "topRow": 16,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.046875,
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5CopyCopy2Copy1",
+                  "rightColumn": 176.75,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "2hikjzkexh",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "wgntwwqvrn",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Trending_channelCopy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Trending category",
+                      "key": "onprmhthhm",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "756kr3fcc6",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "2hikjzkexh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2CopyCopy2Copy1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{trending_category.data[0][\"category\"]}}",
+                      "key": "onprmhthhm",
+                      "rightColumn": 64,
+                      "textAlign": "LEFT",
+                      "widgetId": "wkv4aoryzc",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "2hikjzkexh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3CopyCopy2Copy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "",
+                      "key": "onprmhthhm",
+                      "rightColumn": 38,
+                      "textAlign": "LEFT",
+                      "widgetId": "mnnb5a051l",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "2hikjzkexh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1CopyCopy2Copy1",
+                      "buttonColor": "#e60000",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4n8y5gh272",
+                      "rightColumn": 64,
+                      "iconName": "diagram-tree",
+                      "widgetId": "u02dqki5jz",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "2hikjzkexh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "09i5gqaw3o"
+                }
+              ],
+              "key": "ya8ct6qolq"
+            },
+            {
+              "widgetName": "Statbox1CopyCopy2",
+              "backgroundColor": "white",
+              "rightColumn": 15,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "5bd49dzfpl",
+              "topRow": 6,
+              "bottomRow": 16,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.046875,
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5CopyCopy2",
+                  "rightColumn": 176.75,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "jfelws11a7",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 250,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "5bd49dzfpl",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Statbox1CopyCopy2Copy",
+                      "backgroundColor": "white",
+                      "rightColumn": 28,
+                      "isCanvas": true,
+                      "displayName": "Stats Box",
+                      "iconSVG": "/static/media/icon.382a7c7b.svg",
+                      "widgetId": "majmngho9s",
+                      "topRow": 13,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "STATBOX_WIDGET",
+                      "hideCard": false,
+                      "parentId": "jfelws11a7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.046875,
+                      "leftColumn": 15,
+                      "dynamicBindingPathList": [],
+                      "children": [
+                        {
+                          "widgetName": "Canvas5CopyCopy2Copy",
+                          "rightColumn": 176.75,
+                          "detachFromLayout": true,
+                          "displayName": "Canvas",
+                          "widgetId": "zrlz8ha01s",
+                          "containerStyle": "none",
+                          "topRow": 0,
+                          "bottomRow": 140,
+                          "parentRowSpace": 1,
+                          "isVisible": true,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "version": 1,
+                          "hideCard": true,
+                          "parentId": "majmngho9s",
+                          "minHeight": 140,
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [],
+                          "children": [
+                            {
+                              "widgetName": "Trending_channelCopy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Trending channel",
+                              "key": "onprmhthhm",
+                              "rightColumn": 37,
+                              "textAlign": "LEFT",
+                              "widgetId": "1w50xgq0x0",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#999999",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "zrlz8ha01s",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH2"
+                            },
+                            {
+                              "widgetName": "Text2CopyCopy2Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 4,
+                              "bottomRow": 8,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "{{\nfunction formatB() {\n\tlet n = Total_view_count.data[0][\"views\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 9999){\n    return (n/10000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
+                              "key": "onprmhthhm",
+                              "rightColumn": 64,
+                              "textAlign": "LEFT",
+                              "widgetId": "c9ncy3zb8e",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "zrlz8ha01s",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "HEADING1"
+                            },
+                            {
+                              "widgetName": "Text3CopyCopy2Copy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 8,
+                              "bottomRow": 12,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 2,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "",
+                              "key": "onprmhthhm",
+                              "rightColumn": 38,
+                              "textAlign": "LEFT",
+                              "widgetId": "lfakgfvf9c",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#03B365",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "zrlz8ha01s",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH2"
+                            },
+                            {
+                              "boxShadow": "NONE",
+                              "widgetName": "IconButton1CopyCopy2Copy",
+                              "buttonColor": "#e60000",
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634a.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 48,
+                              "dynamicBindingPathList": [],
+                              "isDisabled": false,
+                              "key": "4n8y5gh272",
+                              "rightColumn": 64,
+                              "iconName": "chart",
+                              "widgetId": "doptx032io",
+                              "buttonStyle": "PRIMARY",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "zrlz8ha01s",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "CIRCLE",
+                              "buttonVariant": "PRIMARY"
+                            }
+                          ],
+                          "key": "09i5gqaw3o"
+                        }
+                      ],
+                      "key": "ya8ct6qolq"
+                    },
+                    {
+                      "widgetName": "Trending_channel",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Trending channel",
+                      "key": "onprmhthhm",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "65wqpxbqez",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "jfelws11a7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2CopyCopy2",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{trending_channels.data[0][\"channel_display_name\"]}}",
+                      "key": "onprmhthhm",
+                      "rightColumn": 64,
+                      "textAlign": "LEFT",
+                      "widgetId": "qg6kq95bht",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "jfelws11a7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3CopyCopy2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "",
+                      "key": "onprmhthhm",
+                      "rightColumn": 38,
+                      "textAlign": "LEFT",
+                      "widgetId": "4f96po1w3u",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "jfelws11a7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1CopyCopy2",
+                      "buttonColor": "#e60000",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4n8y5gh272",
+                      "rightColumn": 64,
+                      "iconName": "chart",
+                      "widgetId": "nijtay6fgi",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "jfelws11a7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "09i5gqaw3o"
+                }
+              ],
+              "key": "ya8ct6qolq"
+            },
+            {
+              "widgetName": "Statbox1CopyCopy1",
+              "backgroundColor": "white",
+              "rightColumn": 41,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "f8inth0l4f",
+              "topRow": 16,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.046875,
+              "leftColumn": 28,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5CopyCopy1",
+                  "rightColumn": 176.75,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "pl8ntse0nb",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "f8inth0l4f",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1CopyCopy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Total Video Length",
+                      "key": "onprmhthhm",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "cbbbw8f26t",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "pl8ntse0nb",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2CopyCopy1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Total_video_length.data[0][\"video_length\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 9999){\n    return (n/10000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
+                      "key": "onprmhthhm",
+                      "rightColumn": 63,
+                      "textAlign": "LEFT",
+                      "widgetId": "aj3nb60b1s",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "pl8ntse0nb",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3CopyCopy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "",
+                      "key": "onprmhthhm",
+                      "rightColumn": 38,
+                      "textAlign": "LEFT",
+                      "widgetId": "j8xzh0nvqg",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "pl8ntse0nb",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1CopyCopy1",
+                      "buttonColor": "#e60000",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 47,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4n8y5gh272",
+                      "rightColumn": 63,
+                      "iconName": "mobile-video",
+                      "widgetId": "e6ncaol9je",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "pl8ntse0nb",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "09i5gqaw3o"
+                }
+              ],
+              "key": "ya8ct6qolq"
+            },
+            {
+              "widgetName": "Statbox1CopyCopy",
+              "backgroundColor": "white",
+              "rightColumn": 28,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "d0zb53is9n",
+              "topRow": 16,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.046875,
+              "leftColumn": 15,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5CopyCopy",
+                  "rightColumn": 176.75,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "vjfoiuegzh",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "d0zb53is9n",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1CopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Total video count",
+                      "key": "onprmhthhm",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "d7jc160gvp",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "vjfoiuegzh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2CopyCopy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Total_video_count.data[0][\"video\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 9999){\n    return (n/10000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
+                      "key": "onprmhthhm",
+                      "rightColumn": 63,
+                      "textAlign": "LEFT",
+                      "widgetId": "132tfz41xp",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "vjfoiuegzh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3CopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "",
+                      "key": "onprmhthhm",
+                      "rightColumn": 38,
+                      "textAlign": "LEFT",
+                      "widgetId": "at8dqk7v4z",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "vjfoiuegzh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1CopyCopy",
+                      "buttonColor": "#e60000",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4n8y5gh272",
+                      "rightColumn": 64,
+                      "iconName": "video",
+                      "widgetId": "s85hfcu50a",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "vjfoiuegzh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "09i5gqaw3o"
+                }
+              ],
+              "key": "ya8ct6qolq"
+            },
+            {
+              "widgetName": "Statbox1Copy",
+              "backgroundColor": "white",
+              "rightColumn": 28,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "l2jloi89x0",
+              "topRow": 6,
+              "bottomRow": 16,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.046875,
+              "leftColumn": 15,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5Copy",
+                  "rightColumn": 176.75,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "tqukbdff6n",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "l2jloi89x0",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Total Views",
+                      "key": "onprmhthhm",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "qvbxd7gfuo",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "tqukbdff6n",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2Copy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Total_view_count.data[0][\"views\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 9999){\n    return (n/10000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
+                      "key": "onprmhthhm",
+                      "rightColumn": 64,
+                      "textAlign": "LEFT",
+                      "widgetId": "uoevjm99bh",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "tqukbdff6n",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "",
+                      "key": "onprmhthhm",
+                      "rightColumn": 38,
+                      "textAlign": "LEFT",
+                      "widgetId": "17wo094qjj",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "tqukbdff6n",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1Copy",
+                      "buttonColor": "#e60000",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4n8y5gh272",
+                      "rightColumn": 64,
+                      "iconName": "eye-open",
+                      "widgetId": "7dlnxf2p1g",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "tqukbdff6n",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "09i5gqaw3o"
+                }
+              ],
+              "key": "ya8ct6qolq"
+            },
+            {
+              "widgetName": "Button1",
+              "buttonColor": "#e60000",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 0,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 9.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "text": "Youtube_Video_Dashboard",
+              "isDisabled": false,
+              "key": "ncg7u9ro2y",
+              "rightColumn": 64,
+              "isDefaultClickDisabled": true,
+              "widgetId": "w9k0ee57hm",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "NONE",
+              "widgetName": "Container1",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 6,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 9.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 41,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas4",
+                  "rightColumn": 229.5,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "9dhha23vqr",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "5wlcweo8zh",
+                  "minHeight": 400,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Category_select",
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Category",
+                      "topRow": 9,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 34,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{Category_list.data.map((row) => { \n      return { label: row.category, value: row.category } \n   })\n}}",
+                      "labelStyle": "BOLD",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "v5i7piex6e",
+                      "isRequired": false,
+                      "rightColumn": 64,
+                      "widgetId": "w8zrzze3p0",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "9dhha23vqr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "onOptionChange": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\t\n})() }}"
+                    },
+                    {
+                      "widgetName": "Text7Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Start Date",
+                      "key": "netxr19jsg",
+                      "rightColumn": 26,
+                      "textAlign": "LEFT",
+                      "widgetId": "450cz95nq7",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "9dhha23vqr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "Start_date",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dateFormat": "DD-MM-YYYY",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onDateSelected"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "iconSVG": "/static/media/icon.300e5ab8.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "type": "DATE_PICKER_WIDGET2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onDateSelected"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "6f5u04yw78",
+                      "onDateSelected": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\t\n})() }}",
+                      "isRequired": false,
+                      "rightColumn": 31,
+                      "defaultDate": "2022-01-01T00:00:00.000+05:30",
+                      "widgetId": "fflxvshls5",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "label": "",
+                      "version": 2,
+                      "parentId": "9dhha23vqr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "timePrecision": "minute",
+                      "firstDayOfWeek": 0,
+                      "closeOnSelection": true,
+                      "maxDate": "2121-12-31T18:29:00.000Z"
+                    },
+                    {
+                      "widgetName": "Text8Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 34,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "End Date",
+                      "key": "netxr19jsg",
+                      "rightColumn": 63,
+                      "textAlign": "LEFT",
+                      "widgetId": "6xuf6ae6vx",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "9dhha23vqr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "End_date",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dateFormat": "DD-MM-YYYY",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onDateSelected"
+                        },
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "iconSVG": "/static/media/icon.300e5ab8.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "type": "DATE_PICKER_WIDGET2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onDateSelected"
+                        }
+                      ],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "6f5u04yw78",
+                      "onDateSelected": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\t\n})() }}",
+                      "isRequired": false,
+                      "defaultDate": "{{moment()}}",
+                      "rightColumn": 64,
+                      "widgetId": "lbh9s2msb3",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "label": "",
+                      "version": 2,
+                      "parentId": "9dhha23vqr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "timePrecision": "minute",
+                      "firstDayOfWeek": 0,
+                      "closeOnSelection": true,
+                      "maxDate": "2121-12-31T18:29:00.000Z"
+                    },
+                    {
+                      "widgetName": "Channel_select",
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Channel",
+                      "topRow": 9,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{Channel_list.data.map((row) => { \n      return { label: row.channel, value: row.channel } \n   })\n}}",
+                      "labelStyle": "BOLD",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "v5i7piex6e",
+                      "isRequired": false,
+                      "rightColumn": 29,
+                      "widgetId": "cjmg6fhfe2",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "9dhha23vqr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "onOptionChange": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\t\n})() }}"
+                    }
+                  ],
+                  "key": "95h8vvjla6"
+                }
+              ],
+              "borderWidth": "0",
+              "key": "cps26c07dt",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 64,
+              "widgetId": "5wlcweo8zh",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0"
+            },
+            {
+              "widgetName": "Statbox1",
+              "backgroundColor": "white",
+              "rightColumn": 41,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "6msxw6jia4",
+              "topRow": 6,
+              "bottomRow": 16,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.046875,
+              "leftColumn": 28,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5",
+                  "rightColumn": 176.75,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "61ia7bu0iy",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "6msxw6jia4",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Total Watch Hrs",
+                      "key": "onprmhthhm",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "v5gshfulzm",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "61ia7bu0iy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Total_watch_hrs.data[0][\"watch_time_hours\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 9999){\n    return (n/10000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
+                      "key": "onprmhthhm",
+                      "rightColumn": 64,
+                      "textAlign": "LEFT",
+                      "widgetId": "zldczmv4k1",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "61ia7bu0iy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "",
+                      "key": "onprmhthhm",
+                      "rightColumn": 38,
+                      "textAlign": "LEFT",
+                      "widgetId": "0ces3q7giv",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "61ia7bu0iy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1",
+                      "buttonColor": "#e60000",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 46,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4n8y5gh272",
+                      "rightColumn": 62,
+                      "iconName": "time",
+                      "widgetId": "s27pvqrni1",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "61ia7bu0iy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "09i5gqaw3o"
+                }
+              ],
+              "key": "ya8ct6qolq"
+            },
+            {
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 27,
+              "bottomRow": 60,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "fbikq9clys": {
+                  "seriesName": "Sales",
+                  "data": "{{Running_View.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.views } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.fbikq9clys.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "io874kgdgz",
+              "rightColumn": 64,
+              "widgetId": "as8r1t7sj7",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Running View",
+              "xAxisName": "",
+              "chartType": "LINE_CHART"
+            },
+            {
+              "widgetName": "Chart2",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 61,
+              "bottomRow": 93,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "8cdswa73jp": {
+                  "seriesName": "view count",
+                  "data": "{{Top_10_video_viewwise.data.map( (obj) =>{ return  {'x': obj.video_title, 'y': obj.views } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.8cdswa73jp.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "io874kgdgz",
+              "rightColumn": 32,
+              "widgetId": "17vu9sqz0e",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Top 10 video by view",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart3",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 61,
+              "bottomRow": 93,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "8snrn6tztt": {
+                  "seriesName": "watch_hrs",
+                  "data": "{{Top_10_video_by_watch_hrs.data.map( (obj) =>{ return  {'x': obj.video_title, 'y': obj.watch_time_hours } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.8snrn6tztt.data"
+                }
+              ],
+              "leftColumn": 32,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 64,
+              "widgetId": "oakqiwq99g",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Top 10 video by watch hrs",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "widgetName": "Chart4",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 94,
+              "bottomRow": 126,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "1kkyknbflk": {
+                  "seriesName": "Sales",
+                  "data": "{{Percentage_of_video_on_channel.data.map( (obj) =>{ return  {'x': obj.channel_display_name, 'y': obj.video_title } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.1kkyknbflk.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 32,
+              "widgetId": "k7na97war1",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "%age videos on channels",
+              "xAxisName": "",
+              "chartType": "PIE_CHART"
+            },
+            {
+              "widgetName": "Chart5",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 94,
+              "bottomRow": 126,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "8e0sdaib5u": {
+                  "seriesName": "Sales",
+                  "data": "{{percentage_watch_category.data.map( (obj) =>{ return  {'x': obj.category, 'y': obj.watch_time_hours } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.8e0sdaib5u.data"
+                }
+              ],
+              "leftColumn": 32,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 64,
+              "widgetId": "ozf6axew3h",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "%age watch hrs per category",
+              "xAxisName": "",
+              "chartType": "PIE_CHART"
+            },
+            {
+              "widgetName": "Chart6",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 127,
+              "bottomRow": 159,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "arwd09b4w7": {
+                  "seriesName": "hrs_channel",
+                  "data": "{{percentage_watch_channelwise.data.map( (obj) =>{ return  {'x': obj.channel_display_name, 'y': obj.watch_time_channel } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.arwd09b4w7.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 32,
+              "widgetId": "wnemlesobx",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "%age watch  hrs per channel",
+              "xAxisName": "",
+              "chartType": "PIE_CHART"
+            },
+            {
+              "widgetName": "Chart7",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 127,
+              "bottomRow": 159,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "e2sqnsfc35": {
+                  "seriesName": "Sales",
+                  "data": "{{Total_Published_video_category.data.map( (obj) =>{ return  {'x': obj.category, 'y': obj.video_pub } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.e2sqnsfc35.data"
+                }
+              ],
+              "leftColumn": 32,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 64,
+              "widgetId": "g96kzbgyf3",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Total video published categorywise",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "widgetName": "Chart8",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 160,
+              "bottomRow": 192,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "8kd2plrydj": {
+                  "seriesName": "video published",
+                  "data": "{{Total_published_videos_channel.data.map( (obj) =>{ return  {'x': obj.channel_display_name, 'y': obj.video_pub_channel } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.8kd2plrydj.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 32,
+              "widgetId": "bzh4logzxl",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Total video published channelwise",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "widgetName": "Chart9",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 160,
+              "bottomRow": 192,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "hxzwlveuyx": {
+                  "seriesName": "Sales",
+                  "data": "{{total_view_categorywise.data.map( (obj) =>{ return  {'x': obj.category, 'y': obj.view_cat } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.hxzwlveuyx.data"
+                }
+              ],
+              "leftColumn": 32,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 64,
+              "widgetId": "92jxggqv8o",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Total view categorywise",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "widgetName": "Chart10",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 193,
+              "bottomRow": 225,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "h43i879y26": {
+                  "seriesName": "Sales",
+                  "data": "{{Total_views_channelwise.data.map( (obj) =>{ return  {'x': obj.channel_display_name, 'y': obj.views_channel } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.h43i879y26.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "wx8vsxnsbt",
+              "rightColumn": 32,
+              "widgetId": "y5s2tlgkle",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Total view channelwise",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
+            }
+          ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Youtube_Category_list",
+              "name": "Category_list",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Channel_list",
+              "name": "Channel_list",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Youtube_Total_video_count",
+              "name": "Total_video_count",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10500
+            },
+            {
+              "id": "Youtube_Total_video_length",
+              "name": "Total_video_length",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Total_view_count",
+              "name": "Total_view_count",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Total_watch_hrs",
+              "name": "Total_watch_hrs",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Youtube_trending_category",
+              "name": "trending_category",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_trending_channels",
+              "name": "trending_channels",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Youtube_Percentage_of_video_on_channel",
+              "name": "Percentage_of_video_on_channel",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 20000
+            },
+            {
+              "id": "Youtube_Running_View",
+              "name": "Running_View",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Top_10_video_by_watch_hrs",
+              "name": "Top_10_video_by_watch_hrs",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Top_10_video_viewwise",
+              "name": "Top_10_video_viewwise",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Total_Published_video_category",
+              "name": "Total_Published_video_category",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Youtube_Total_published_videos_channel",
+              "name": "Total_published_videos_channel",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_Total_views_channelwise",
+              "name": "Total_views_channelwise",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_percentage_watch_category",
+              "name": "percentage_watch_category",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_percentage_watch_channelwise",
+              "name": "percentage_watch_channelwise",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Youtube_total_view_categorywise",
+              "name": "total_view_categorywise",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
-          "MainContainer"
+          "Button1",
+          "Canvas4",
+          "Canvas5",
+          "Canvas5Copy",
+          "Canvas5CopyCopy",
+          "Canvas5CopyCopy1",
+          "Canvas5CopyCopy2",
+          "Canvas5CopyCopy2Copy",
+          "Canvas5CopyCopy2Copy1",
+          "Category_select",
+          "Channel_select",
+          "Chart1",
+          "Chart10",
+          "Chart2",
+          "Chart3",
+          "Chart4",
+          "Chart5",
+          "Chart6",
+          "Chart7",
+          "Chart8",
+          "Chart9",
+          "Container1",
+          "End_date",
+          "IconButton1",
+          "IconButton1Copy",
+          "IconButton1CopyCopy",
+          "IconButton1CopyCopy1",
+          "IconButton1CopyCopy2",
+          "IconButton1CopyCopy2Copy",
+          "IconButton1CopyCopy2Copy1",
+          "MainContainer",
+          "Start_date",
+          "Statbox1",
+          "Statbox1Copy",
+          "Statbox1CopyCopy",
+          "Statbox1CopyCopy1",
+          "Statbox1CopyCopy2",
+          "Statbox1CopyCopy2Copy",
+          "Statbox1CopyCopy2Copy1",
+          "Text1",
+          "Text1Copy",
+          "Text1CopyCopy",
+          "Text1CopyCopy1",
+          "Text2",
+          "Text2Copy",
+          "Text2CopyCopy",
+          "Text2CopyCopy1",
+          "Text2CopyCopy2",
+          "Text2CopyCopy2Copy",
+          "Text2CopyCopy2Copy1",
+          "Text3",
+          "Text3Copy",
+          "Text3CopyCopy",
+          "Text3CopyCopy1",
+          "Text3CopyCopy2",
+          "Text3CopyCopy2Copy",
+          "Text3CopyCopy2Copy1",
+          "Text7Copy",
+          "Text8Copy",
+          "Trending_channel",
+          "Trending_channelCopy",
+          "Trending_channelCopy1"
         ],
         "validOnPageLoadActions": true,
         "id": "Youtube",

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Select_uniqid",
+    "name": "Channel_list",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -17,9 +17,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT unq_id\nFROM public.\"smg_dmp_fb_video_dashboard_unq_view\" limit 10;"
+      "body": "SELECT Distinct(channel_display_name) as channel\nFROM public.smg_dmp_youtube_dashboard_unq_view order by channel Asc;"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -30,7 +30,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Youtube_Select_uniqid",
+  "id": "Youtube_Channel_list",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_628605883cd70e097b62344b"
+  "gitSyncId": "62837f843cd70e097b62341a_628af65e3cd70e097b62345b"
 }
