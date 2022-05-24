@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1610,
+          "bottomRow": 1740,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -177,7 +177,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Total View",
+                      "text": "Total Video View",
                       "key": "netxr19jsg",
                       "rightColumn": 37,
                       "textAlign": "LEFT",
@@ -971,7 +971,7 @@
               "key": "g66zfh8iqk"
             },
             {
-              "boxShadow": "NONE",
+              "boxShadow": "VARIANT2",
               "widgetName": "Container1",
               "borderColor": "transparent",
               "isCanvas": true,
@@ -1069,7 +1069,7 @@
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
-                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nLast_vs_current_month_year.run();\n\tcurrent_vs_last_month.run();\n\tRunning_view_domainwise_.run();\n})() }}",
+                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nLast_vs_current_month_year.run();\n\tCurrent_vs_last_month.run();\n\tRunning_view_domainwise_.run();\n})() }}",
                       "isRequired": false,
                       "defaultDate": "2020-01-01T00:00:00.000+05:30",
                       "rightColumn": 31,
@@ -1145,7 +1145,7 @@
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
-                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\n\tLast_vs_current_month_year.run();\ncurrent_vs_last_month.run();\nRunning_view_domainwise_.run();\n})() }}",
+                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\n\tLast_vs_current_month_year.run();\nCurrent_vs_last_month.run();\nRunning_view_domainwise_.run();\n})() }}",
                       "isRequired": false,
                       "defaultDate": "2021-08-31T00:00:00.000+05:30",
                       "rightColumn": 64,
@@ -1206,7 +1206,7 @@
                       "parentId": "n62vtnc9sj",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\n\tLast_vs_current_month_year.run();\n\tcurrent_vs_last_month.run();\n\tRunning_view_domainwise_.run();\n})() }}"
+                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\n\tLast_vs_current_month_year.run();\n\tCurrent_vs_last_month.run();\n\tRunning_view_domainwise_.run();\n})() }}"
                     }
                   ],
                   "key": "95h8vvjla6"
@@ -2140,8 +2140,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 93,
-              "bottomRow": 127,
+              "topRow": 125,
+              "bottomRow": 172,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2158,7 +2158,7 @@
                   "key": "chartData.hct1yewd49.data"
                 }
               ],
-              "leftColumn": 32,
+              "leftColumn": 0,
               "customFusionChartConfig": {
                 "type": "column2d",
                 "dataSource": {
@@ -2195,94 +2195,17 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "% watch hrs domainwise",
+              "chartName": "Domainwise Watch Hrs",
               "xAxisName": "",
               "chartType": "PIE_CHART"
-            },
-            {
-              "widgetName": "Chart4",
-              "allowScroll": false,
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 93,
-              "bottomRow": 127,
-              "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
-              "hideCard": false,
-              "chartData": {
-                "ef8ubr47sg": {
-                  "seriesName": "male",
-                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': obj.time, 'y': obj.male_viewer } })}}"
-                },
-                "ux8xnwqu0n": {
-                  "seriesName": "Female",
-                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': obj.time, 'y': obj.female_viewer } })}}"
-                },
-                "x0bkvk9vdw": {
-                  "seriesName": "Undefined",
-                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': obj.time, 'y': obj.undefined_viewer } })}}"
-                }
-              },
-              "animateLoading": true,
-              "dynamicTriggerPathList": [],
-              "dynamicBindingPathList": [
-                {
-                  "key": "chartData.ef8ubr47sg.data"
-                },
-                {
-                  "key": "chartData.ux8xnwqu0n.data"
-                },
-                {
-                  "key": "chartData.x0bkvk9vdw.data"
-                }
-              ],
-              "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
-              "key": "gb5frly784",
-              "rightColumn": 32,
-              "widgetId": "py2mye3eun",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "labelOrientation": "slant",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "yAxisName": "",
-              "chartName": "Last Month's Viewer count Genderwise",
-              "xAxisName": "",
-              "chartType": "LINE_CHART"
             },
             {
               "widgetName": "Chart5",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 127,
-              "bottomRow": 159,
+              "topRow": 93,
+              "bottomRow": 125,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2349,21 +2272,18 @@
             {
               "widgetName": "Chart6",
               "allowScroll": false,
+              "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 127,
-              "bottomRow": 159,
+              "topRow": 93,
+              "bottomRow": 125,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "c13vqx6g0p": {
                   "seriesName": "current month",
-                  "data": "{{current_vs_last_month.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.count_current } })}}"
-                },
-                "qkpla83njt": {
-                  "seriesName": "Last month",
-                  "data": "{{current_vs_last_month.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.count_last } })}}"
+                  "data": "{{Current_vs_last_month.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.count_current } })}}"
                 }
               },
               "animateLoading": true,
@@ -2371,9 +2291,6 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.c13vqx6g0p.data"
-                },
-                {
-                  "key": "chartData.qkpla83njt.data"
                 }
               ],
               "leftColumn": 32,
@@ -2475,7 +2392,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Running views",
+              "chartName": "Video Views Trend",
               "xAxisName": "",
               "chartType": "LINE_CHART"
             }
@@ -2605,11 +2522,10 @@
           ],
           [
             {
-              "id": "Facebook_Gender_count_viewer",
-              "name": "Gender_count_viewer",
+              "id": "Facebook_Current_vs_last_month",
+              "name": "Current_vs_last_month",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Start_date.selectedDate",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -2668,16 +2584,6 @@
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Facebook_current_vs_last_month",
-              "name": "current_vs_last_month",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 10000
             }
           ]
         ],
@@ -2697,7 +2603,6 @@
           "Chart1",
           "Chart2",
           "Chart3",
-          "Chart4",
           "Chart5",
           "Chart6",
           "Chart7",

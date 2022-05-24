@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2270,
+          "bottomRow": 3130,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -135,7 +135,7 @@
                       "parentId": "2hikjzkexh",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "fontSize": "HEADING2"
                     },
                     {
                       "widgetName": "Text3CopyCopy2Copy1",
@@ -202,23 +202,18 @@
             },
             {
               "widgetName": "Statbox1CopyCopy2",
-              "backgroundColor": "white",
-              "rightColumn": 15,
               "isCanvas": true,
+              "dynamicPropertyPathList": [],
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7b.svg",
-              "widgetId": "5bd49dzfpl",
               "topRow": 6,
               "bottomRow": 16,
               "parentRowSpace": 10,
-              "isVisible": true,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
               "animateLoading": true,
               "parentColumnSpace": 11.046875,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [],
               "children": [
@@ -485,7 +480,7 @@
                       "parentId": "jfelws11a7",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "fontSize": "HEADING2"
                     },
                     {
                       "widgetName": "Text3CopyCopy2",
@@ -548,7 +543,14 @@
                   "key": "09i5gqaw3o"
                 }
               ],
-              "key": "ya8ct6qolq"
+              "key": "ya8ct6qolq",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 15,
+              "widgetId": "5bd49dzfpl",
+              "isVisible": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
             },
             {
               "widgetName": "Statbox1CopyCopy1",
@@ -609,7 +611,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Total Video Length",
+                      "text": "Total Video Content(Hrs)",
                       "key": "onprmhthhm",
                       "rightColumn": 37,
                       "textAlign": "LEFT",
@@ -959,7 +961,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Total Views",
+                      "text": "Total Video Views",
                       "key": "onprmhthhm",
                       "rightColumn": 37,
                       "textAlign": "LEFT",
@@ -1106,7 +1108,7 @@
               "placement": "CENTER"
             },
             {
-              "boxShadow": "NONE",
+              "boxShadow": "VARIANT2",
               "widgetName": "Container1",
               "borderColor": "transparent",
               "isCanvas": true,
@@ -1388,7 +1390,7 @@
                       "isDisabled": false,
                       "key": "v5i7piex6e",
                       "isRequired": false,
-                      "rightColumn": 33,
+                      "rightColumn": 31,
                       "widgetId": "cjmg6fhfe2",
                       "isVisible": true,
                       "version": 1,
@@ -1590,7 +1592,7 @@
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
               "topRow": 27,
-              "bottomRow": 60,
+              "bottomRow": 57,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1643,7 +1645,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Running View",
+              "chartName": "Video View Trend",
               "xAxisName": "",
               "chartType": "LINE_CHART"
             },
@@ -1652,8 +1654,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 61,
-              "bottomRow": 93,
+              "topRow": 57,
+              "bottomRow": 89,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1697,7 +1699,7 @@
                 }
               },
               "key": "io874kgdgz",
-              "rightColumn": 32,
+              "rightColumn": 31,
               "widgetId": "17vu9sqz0e",
               "isVisible": true,
               "version": 1,
@@ -1716,8 +1718,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 61,
-              "bottomRow": 93,
+              "topRow": 57,
+              "bottomRow": 89,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1734,7 +1736,7 @@
                   "key": "chartData.8snrn6tztt.data"
                 }
               ],
-              "leftColumn": 32,
+              "leftColumn": 31,
               "customFusionChartConfig": {
                 "type": "column2d",
                 "dataSource": {
@@ -1761,7 +1763,7 @@
                 }
               },
               "key": "wx8vsxnsbt",
-              "rightColumn": 64,
+              "rightColumn": 63,
               "widgetId": "oakqiwq99g",
               "isVisible": true,
               "version": 1,
@@ -1779,8 +1781,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 94,
-              "bottomRow": 126,
+              "topRow": 89,
+              "bottomRow": 142,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1824,7 +1826,7 @@
                 }
               },
               "key": "wx8vsxnsbt",
-              "rightColumn": 32,
+              "rightColumn": 64,
               "widgetId": "k7na97war1",
               "isVisible": true,
               "version": 1,
@@ -1833,7 +1835,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "%age videos on channels",
+              "chartName": "Videos on channels(%)",
               "xAxisName": "",
               "chartType": "PIE_CHART"
             },
@@ -1842,8 +1844,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 94,
-              "bottomRow": 126,
+              "topRow": 142,
+              "bottomRow": 191,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1860,7 +1862,7 @@
                   "key": "chartData.8e0sdaib5u.data"
                 }
               ],
-              "leftColumn": 32,
+              "leftColumn": 0,
               "customFusionChartConfig": {
                 "type": "column2d",
                 "dataSource": {
@@ -1896,7 +1898,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "%age watch hrs per category",
+              "chartName": "Watch Hrs Per Category",
               "xAxisName": "",
               "chartType": "PIE_CHART"
             },
@@ -1905,8 +1907,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 127,
-              "bottomRow": 159,
+              "topRow": 191,
+              "bottomRow": 247,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1950,7 +1952,7 @@
                 }
               },
               "key": "wx8vsxnsbt",
-              "rightColumn": 32,
+              "rightColumn": 64,
               "widgetId": "wnemlesobx",
               "isVisible": true,
               "version": 1,
@@ -1959,7 +1961,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "%age watch  hrs per channel",
+              "chartName": "Watch Hrs Per Channel",
               "xAxisName": "",
               "chartType": "PIE_CHART"
             },
@@ -1968,8 +1970,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 127,
-              "bottomRow": 159,
+              "topRow": 247,
+              "bottomRow": 279,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2022,7 +2024,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total video published categorywise",
+              "chartName": "Total Video Published Categorywise",
               "xAxisName": "",
               "chartType": "COLUMN_CHART"
             },
@@ -2031,8 +2033,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 160,
-              "bottomRow": 192,
+              "topRow": 247,
+              "bottomRow": 279,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2085,7 +2087,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total video published channelwise",
+              "chartName": "Total Video Published Channelwise",
               "xAxisName": "",
               "chartType": "COLUMN_CHART"
             },
@@ -2094,8 +2096,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 160,
-              "bottomRow": 192,
+              "topRow": 279,
+              "bottomRow": 311,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2148,7 +2150,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total view categorywise",
+              "chartName": "Total View Categorywise",
               "xAxisName": "",
               "chartType": "COLUMN_CHART"
             },
@@ -2157,8 +2159,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 193,
-              "bottomRow": 225,
+              "topRow": 279,
+              "bottomRow": 311,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2211,7 +2213,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total view channelwise",
+              "chartName": "Total View Channelwise",
               "xAxisName": "",
               "chartType": "COLUMN_CHART"
             }
