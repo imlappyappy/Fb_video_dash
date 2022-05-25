@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(cast(comment as decimal)) as Total_comment\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
+      "body": "SELECT SUM(cast(comment as decimal)) as Total_comment\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [

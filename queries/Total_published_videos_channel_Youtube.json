@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 20000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT channel_display_name AS channel_display_name,\n       count(DISTINCT video_title) AS video_Pub_channel\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date >= '{{Start_date.selectedDate}}':: date\n  AND date < '{{End_date.selectedDate}}':: date\n\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY channel_display_name\nORDER BY video_Pub_channel DESC\nLIMIT 50;"
+      "body": "SELECT channel_display_name AS channel_display_name,\n       count(DISTINCT video_title) AS video_Pub_channel\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date > '{{Start_date.selectedDate}}':: date\n  AND date < '{{End_date.selectedDate}}':: date\n\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY channel_display_name\nORDER BY video_Pub_channel DESC\nLIMIT 50;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
