@@ -2276,7 +2276,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Total_like_Count",
@@ -2375,7 +2375,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Percentage_Watch_hrs_of_domain",
@@ -2397,7 +2397,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Top_trending_domain",
@@ -2408,7 +2408,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Top_viewed_videos",
