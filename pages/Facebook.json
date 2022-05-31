@@ -1598,7 +1598,7 @@
                       "key": "6f5u04yw78",
                       "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nLast_vs_current_month_year.run();\n\tCurrent_vs_last_month.run();\n\tRunning_view_domainwise_.run();\n})() }}",
                       "isRequired": false,
-                      "defaultDate": "2020-01-01T00:00:00.000+05:30",
+                      "defaultDate": "2022-01-01T00:00:00.000+05:30",
                       "rightColumn": 31,
                       "widgetId": "cyo3e4amvs",
                       "isVisible": true,
@@ -1651,6 +1651,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "onDateSelected"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
                       "displayName": "DatePicker",
@@ -1669,12 +1672,16 @@
                         }
                       ],
                       "leftColumn": 33,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
                       "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_haha_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_reaction_count.run();\n\tTotal_sad_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\n\tLast_vs_current_month_year.run();\nCurrent_vs_last_month.run();\nRunning_view_domainwise_.run();\n})() }}",
                       "isRequired": false,
-                      "defaultDate": "2021-08-31T00:00:00.000+05:30",
+                      "defaultDate": "{{moment()}}",
                       "rightColumn": 64,
                       "widgetId": "gmgz5b84ll",
                       "isVisible": true,
