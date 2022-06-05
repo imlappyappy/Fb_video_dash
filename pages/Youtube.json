@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 680,
+          "rightColumn": 679,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1436,7 +1436,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Watch Hrs Per Category",
+              "chartName": "Avg Watch Hrs Per Category",
               "xAxisName": "",
               "chartType": "PIE_CHART"
             },
@@ -1499,7 +1499,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Watch Hrs Per Channel",
+              "chartName": "Avg Watch Hrs Per Channel",
               "xAxisName": "",
               "chartType": "PIE_CHART"
             },

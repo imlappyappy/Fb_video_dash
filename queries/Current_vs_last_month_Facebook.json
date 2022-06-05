@@ -19,7 +19,7 @@
       "encodeParamsToggle": true,
       "body": "SELECT Date_trunc('month', view_date)\tAS timestamp, \ncount(Distinct CASE WHEN view_date >= '{{End_date.selectedDate}}':: date - interval '1 month' \n  \t\tAND view_date < '{{End_date.selectedDate}}':: date \n\t  THEN video_id END) as COUNT_CURRENT\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE\nview_date > '{{End_date.selectedDate}}':: date - interval '2 months'\n  AND view_date < '{{End_date.selectedDate}}':: date AND \nname like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n GROUP BY\n  timestamp\n\torder by timestamp desc\nlimit 2;"
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
