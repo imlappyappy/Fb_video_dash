@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT name AS name,\n       count(total_video_view_total_time) AS watch_hrs\nFROM public.\"smg_dmp_fb_video_dashboard_unq\"\nWHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\nGROUP BY name\nORDER BY watch_hrs DESC\nLIMIT 10000;"
+      "body": "SELECT name AS name,\n       SUM(cast(total_video_view_total_time as decimal))/count(name) AS watch_hrs\nFROM public.\"smg_dmp_fb_video_dashboard_unq\"\nWHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\nGROUP BY name\nORDER BY watch_hrs DESC\nLIMIT 10000;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
