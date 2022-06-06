@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 609,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1482,7 +1482,7 @@
               "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [],
-              "text": "FB_Video_Dashboard",
+              "text": "Facebook Video Dashboard",
               "isDisabled": false,
               "key": "ncg7u9ro2y",
               "rightColumn": 64,

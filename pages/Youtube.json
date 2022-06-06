@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 679,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -800,7 +800,7 @@
               "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [],
-              "text": "Youtube_Video_Dashboard",
+              "text": "Youtube Video Dashboard",
               "isDisabled": false,
               "key": "ncg7u9ro2y",
               "rightColumn": 64,
