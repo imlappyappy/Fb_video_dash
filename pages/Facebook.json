@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1900,
+          "bottomRow": 2060,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -1408,8 +1408,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 61,
-              "bottomRow": 93,
+              "topRow": 139,
+              "bottomRow": 171,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1596,7 +1596,7 @@
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
-                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n})() }}",
+                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n})() }}",
                       "isRequired": false,
                       "defaultDate": "2022-05-25T00:00:00.000+05:30",
                       "rightColumn": 31,
@@ -1679,7 +1679,7 @@
                       ],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
-                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n})() }}",
+                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n})() }}",
                       "isRequired": false,
                       "defaultDate": "{{moment()}}",
                       "rightColumn": 64,
@@ -1740,7 +1740,7 @@
                       "parentId": "n62vtnc9sj",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n})() }}"
+                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n})() }}"
                     }
                   ],
                   "key": "95h8vvjla6"
@@ -1764,8 +1764,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 61,
-              "bottomRow": 93,
+              "topRow": 139,
+              "bottomRow": 171,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1830,8 +1830,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 93,
-              "bottomRow": 140,
+              "topRow": 92,
+              "bottomRow": 139,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2110,8 +2110,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 141,
-              "bottomRow": 176,
+              "topRow": 61,
+              "bottomRow": 92,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2142,7 +2142,7 @@
                   "key": "chartData.3kx29vogl9.data"
                 }
               ],
-              "leftColumn": 0,
+              "leftColumn": 32,
               "customFusionChartConfig": {
                 "type": "column2d",
                 "dataSource": {
@@ -2181,6 +2181,187 @@
               "chartName": "Viewer's Trend Genderwise",
               "xAxisName": "",
               "chartType": "LINE_CHART"
+            },
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "domain",
+                "total_video_views",
+                "total_watch_hrs"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 61,
+              "bottomRow": 92,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.domain.computedValue"
+                },
+                {
+                  "key": "primaryColumns.total_video_views.computedValue"
+                },
+                {
+                  "key": "primaryColumns.total_watch_hrs.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "domain": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "domain",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "domain",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.domain))}}"
+                },
+                "total_video_views": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "total_video_views",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "total_video_views",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.total_video_views))}}"
+                },
+                "total_watch_hrs": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "total_watch_hrs",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "total_watch_hrs",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.total_watch_hrs))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "2rghavbl3u",
+              "derivedColumns": {},
+              "rightColumn": 32,
+              "textSize": "PARAGRAPH",
+              "widgetId": "vylsikcaf4",
+              "isVisibleFilters": true,
+              "tableData": "{{Table_view_trending.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "domain": 191,
+                "total_video_views": 181
+              }
+            },
+            {
+              "widgetName": "Chart9",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 172,
+              "bottomRow": 204,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "uyu5l2tvbi": {
+                  "seriesName": "Sales",
+                  "data": "{{video_trend_viewer.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.total_video_view } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.uyu5l2tvbi.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "k0nao1kdtx",
+              "rightColumn": 56,
+              "widgetId": "tu7sueujl5",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "xAxisName": "Product Line",
+              "chartType": "LINE_CHART"
             }
           ]
         },
@@ -2198,6 +2379,17 @@
             {
               "id": "Facebook_Sum_total_view",
               "name": "Sum_total_view",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_Table_view_trending",
+              "name": "Table_view_trending",
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
@@ -2361,6 +2553,17 @@
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Facebook_video_trend_viewer",
+              "name": "video_trend_viewer",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
             }
           ]
         ],
@@ -2382,6 +2585,7 @@
           "Chart3",
           "Chart7",
           "Chart8",
+          "Chart9",
           "Container1",
           "Container2",
           "Container2Copy",
@@ -2407,6 +2611,7 @@
           "IconButton4Copy4Copy3",
           "MainContainer",
           "Start_date",
+          "Table1",
           "Text12",
           "Text12Copy",
           "Text12Copy1",
