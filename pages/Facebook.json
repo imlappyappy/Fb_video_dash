@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 680,
+          "rightColumn": 678,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1575,6 +1575,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "onDateSelected"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
                       "displayName": "DatePicker",
@@ -1593,12 +1596,16 @@
                         }
                       ],
                       "leftColumn": 0,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
                       "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n})() }}",
                       "isRequired": false,
-                      "defaultDate": "2022-05-25T00:00:00.000+05:30",
+                      "defaultDate": "{{moment().add(-7, 'days')}}",
                       "rightColumn": 31,
                       "widgetId": "cyo3e4amvs",
                       "isVisible": true,
