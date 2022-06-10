@@ -19,7 +19,7 @@
       "encodeParamsToggle": true,
       "body": "SELECT Date_trunc('day', view_date)\tAS timestamp,\ntotal_video_views as Total_video_view,\nvideo_id,name\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\tgroup by timestamp,video_id,Total_video_view,name\n\torder by timestamp;"
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"

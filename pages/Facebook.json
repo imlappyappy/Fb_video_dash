@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2060,
+          "bottomRow": 1930,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -2299,69 +2299,6 @@
                 "domain": 191,
                 "total_video_views": 181
               }
-            },
-            {
-              "widgetName": "Chart9",
-              "allowScroll": false,
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 172,
-              "bottomRow": 204,
-              "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
-              "hideCard": false,
-              "chartData": {
-                "uyu5l2tvbi": {
-                  "seriesName": "Sales",
-                  "data": "{{video_trend_viewer.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.total_video_view } })}}"
-                }
-              },
-              "animateLoading": true,
-              "dynamicTriggerPathList": [],
-              "dynamicBindingPathList": [
-                {
-                  "key": "chartData.uyu5l2tvbi.data"
-                }
-              ],
-              "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
-              "key": "k0nao1kdtx",
-              "rightColumn": 56,
-              "widgetId": "tu7sueujl5",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "labelOrientation": "auto",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "yAxisName": "Revenue($)",
-              "chartName": "Sales Report",
-              "xAxisName": "Product Line",
-              "chartType": "LINE_CHART"
             }
           ]
         },
@@ -2385,7 +2322,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Table_view_trending",
@@ -2553,17 +2490,6 @@
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 15000
-            },
-            {
-              "id": "Facebook_video_trend_viewer",
-              "name": "video_trend_viewer",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 10000
             }
           ]
         ],
@@ -2585,7 +2511,6 @@
           "Chart3",
           "Chart7",
           "Chart8",
-          "Chart9",
           "Container1",
           "Container2",
           "Container2Copy",
