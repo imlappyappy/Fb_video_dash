@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select channel_display_name,\n\t\t\tcategory,\nSUM(views) as Total_Video_Views,\nSUM(watch_time_hours) as Total_Watch_Hrs\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date > '{{Start_date.selectedDate}}':: date\n  AND date < '{{End_date.selectedDate}}':: date\n\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\ngroup by category,channel_display_name\norder by Total_Video_Views DESC"
+      "body": "select channel_display_name,\n\t\t\tcategory,\nSUM(views) as Total_Video_Views,\nSUM(watch_time_hours) as Total_Watch_Hrs\nFROM public.smg_dmp_youtube_dashboard_unq_view\nwhere date >= '{{moment().format(\"YYYY-MM-01\")}}':: date\n  \t\tAND date < '{{moment()}}':: date\ngroup by category,channel_display_name\norder by Total_Video_Views DESC"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -29,10 +29,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
-      "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
-      "End_date.selectedDate",
-      "Start_date.selectedDate"
+      "moment()",
+      "moment().format(\"YYYY-MM-01\")"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

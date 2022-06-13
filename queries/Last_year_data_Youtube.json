@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Daily_change_data",
+    "name": "Last_year_data",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Date_trunc('day', date)\tAS timestamp, \nSUM(views) as COUNT_Today\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().add(-4, 'day')}}':: date\n  \t\tAND date < '{{moment().add(-3, 'day')}}':: date\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
+      "body": "SELECT Date_trunc('year', date)\tAS timestamp, \nsum(cast(views as decimal)) as COUNT_Prevyear\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().add(-1, 'year').format(\"YYYY-MM-01\")}}':: date\n  \t\tAND date < '{{moment().add(-1, 'year').format(\"YYYY-12-31\")}}':: date\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -29,15 +29,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "moment().add(-3, 'day')",
-      "moment().add(-4, 'day')"
+      "moment().add(-1, 'year').format(\"YYYY-12-31\")",
+      "moment().add(-1, 'year').format(\"YYYY-MM-01\")"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Youtube_Daily_change_data",
+  "id": "Youtube_Last_year_data",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_62a2f2384c1f4b56d4d33c48"
+  "gitSyncId": "62837f843cd70e097b62341a_62a6d1854c1f4b56d4d33c62"
 }
