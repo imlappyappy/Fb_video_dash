@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Table_view_trending",
+    "name": "Daily_change_data",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,12 +12,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Facebook",
+    "pageId": "Youtube",
     "actionConfiguration": {
-      "timeoutInMillisecond": 20000,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select name as Domain,\nSUM(cast(total_video_views as decimal)) as Current_Month_views,\nSUM(cast(total_video_view_total_time as decimal)) as Current_Month_Watch_Hrs\nFROM public.smg_dmp_fb_video_dashboard_unq_view\nwhere view_date >= '{{moment().format(\"YYYY-MM-01\")}}':: date\n  \t\tAND view_date < '{{moment()}}':: date\ngroup by Domain"
+      "body": "SELECT Date_trunc('day', date)\tAS timestamp, \nSUM(views) as COUNT_Today\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().add(-1, 'day')}}':: date\n  \t\tAND date < '{{moment()}}':: date\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -30,14 +30,14 @@
     "messages": [],
     "jsonPathKeys": [
       "moment()",
-      "moment().format(\"YYYY-MM-01\")"
+      "moment().add(-1, 'day')"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Facebook_Table_view_trending",
+  "id": "Youtube_Daily_change_data",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_629ec229f13eca0c65c06cc8"
+  "gitSyncId": "62837f843cd70e097b62341a_62a2f2384c1f4b56d4d33c48"
 }

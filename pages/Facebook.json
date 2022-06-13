@@ -8,12 +8,12 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 678,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1930,
+          "bottomRow": 1900,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -26,6 +26,370 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
+            {
+              "widgetName": "current_prev_year",
+              "backgroundColor": "white",
+              "rightColumn": 37,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "7aalvtoo0u",
+              "topRow": 172,
+              "bottomRow": 187,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.4375,
+              "leftColumn": 25,
+              "children": [
+                {
+                  "widgetName": "Canvas6CopyCopy",
+                  "rightColumn": 167,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "kk3wmh84r7",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "7aalvtoo0u",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Text14CopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Yearly(vs LastYear)",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 62,
+                      "textAlign": "CENTER",
+                      "widgetId": "6c0cjamaro",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "kk3wmh84r7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING2"
+                    },
+                    {
+                      "widgetName": "Text15CopyCopy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Current_year_view.data[0][\"count_currentyear\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n;\n\t}\n}()\n}}",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "8fle157zoh",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "kk3wmh84r7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text16CopyCopy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction changepercent() {\n\tlet n = ((Current_year_view.data[0][\"count_currentyear\"]-Last_Year_view.data[0][\"count_prevyear\"])/(Last_Year_view.data[0][\"count_prevyear\"])*100)\n\tif (n > 0){\n\t\treturn (n).toFixed(2) + \"% more than last year\";\n\t}\n  else if(n < 0){\n    return (n).toFixed(2) + \"% less than last year\";\n\t}\n}()\n}}",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 51,
+                      "textAlign": "LEFT",
+                      "widgetId": "1ldip67n3v",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#3366FF",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "kk3wmh84r7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton5CopyCopy",
+                      "buttonColor": "#3366FF",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 51,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "yfe2tdxnbx",
+                      "rightColumn": 55,
+                      "iconName": "trending-up",
+                      "widgetId": "c10ia6pgoh",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "kk3wmh84r7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "vi7e9prm0d"
+                }
+              ],
+              "key": "yu5secbohb"
+            },
+            {
+              "widgetName": "current_prev_month",
+              "backgroundColor": "white",
+              "rightColumn": 25,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "fjq4ggkpm4",
+              "topRow": 172,
+              "bottomRow": 187,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.4375,
+              "leftColumn": 13,
+              "children": [
+                {
+                  "widgetName": "Canvas6Copy",
+                  "rightColumn": 167,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "03izbawd02",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "fjq4ggkpm4",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Text14Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Monthly(vs LastMonth)",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 62,
+                      "textAlign": "CENTER",
+                      "widgetId": "excy0qfwxd",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "03izbawd02",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING2"
+                    },
+                    {
+                      "widgetName": "Text15Copy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Current_month_Data.data[0][\"count_currentmonth\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n;\n\t}\n}()\n}}",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "nljo38l39b",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "03izbawd02",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text16Copy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction changepercent() {\n\tlet n = ((Current_month_Data.data[0][\"count_currentmonth\"]-Prev_month_data.data[0][\"count_prevmonth\"])/(Prev_month_data.data[0][\"count_prevmonth\"])*100)\n\tif (n > 0){\n\t\treturn (n).toFixed(2) + \"% more than last month\";\n\t}\n  else if(n < 0){\n    return (n).toFixed(2) + \"% less than last month\";\n\t}\n}()\n}}",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 51,
+                      "textAlign": "LEFT",
+                      "widgetId": "w54xl7l3vw",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#3366FF",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "03izbawd02",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton5Copy",
+                      "buttonColor": "#3366FF",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 51,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "yfe2tdxnbx",
+                      "rightColumn": 55,
+                      "iconName": "trending-up",
+                      "widgetId": "rowvqg4n3v",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "03izbawd02",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "vi7e9prm0d"
+                }
+              ],
+              "key": "yu5secbohb"
+            },
             {
               "boxShadow": "VARIANT2",
               "widgetName": "Container2Copy4Copy3",
@@ -1605,7 +1969,7 @@
                       "key": "6f5u04yw78",
                       "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n})() }}",
                       "isRequired": false,
-                      "defaultDate": "{{moment().add(-7, 'days')}}",
+                      "defaultDate": "{{moment().format(\"YYYY-MM-01\")}}",
                       "rightColumn": 31,
                       "widgetId": "cyo3e4amvs",
                       "isVisible": true,
@@ -2185,7 +2549,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Viewer's Trend Genderwise",
+              "chartName": "Viewer's Distribution Genderwise",
               "xAxisName": "",
               "chartType": "LINE_CHART"
             },
@@ -2194,8 +2558,8 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "domain",
-                "total_video_views",
-                "total_watch_hrs"
+                "current_month_views",
+                "current_month_watch_hrs"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -2218,10 +2582,10 @@
                   "key": "primaryColumns.domain.computedValue"
                 },
                 {
-                  "key": "primaryColumns.total_video_views.computedValue"
+                  "key": "primaryColumns.current_month_views.computedValue"
                 },
                 {
-                  "key": "primaryColumns.total_watch_hrs.computedValue"
+                  "key": "primaryColumns.current_month_watch_hrs.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -2240,13 +2604,13 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "domain",
+                  "label": "Domain",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.domain))}}"
                 },
-                "total_video_views": {
+                "current_month_views": {
                   "index": 1,
                   "width": 150,
-                  "id": "total_video_views",
+                  "id": "current_month_views",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -2257,13 +2621,13 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "total_video_views",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.total_video_views))}}"
+                  "label": "Current Month Views",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.current_month_views))}}"
                 },
-                "total_watch_hrs": {
+                "current_month_watch_hrs": {
                   "index": 2,
                   "width": 150,
-                  "id": "total_watch_hrs",
+                  "id": "current_month_watch_hrs",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -2274,8 +2638,8 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "total_watch_hrs",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.total_watch_hrs))}}"
+                  "label": "Current Month Watch Hrs",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.current_month_watch_hrs))}}"
                 }
               },
               "delimiter": ",",
@@ -2304,8 +2668,191 @@
                 "step": 62,
                 "status": 75,
                 "domain": 191,
-                "total_video_views": 181
+                "total_video_views": 181,
+                "current_month_views": 177
               }
+            },
+            {
+              "widgetName": "dailyvsyesterday",
+              "backgroundColor": "white",
+              "rightColumn": 13,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "8f4azgaroh",
+              "topRow": 172,
+              "bottomRow": 187,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.4375,
+              "leftColumn": 1,
+              "children": [
+                {
+                  "widgetName": "Canvas6",
+                  "rightColumn": 167,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "3ky0u0ktis",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 140,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "8f4azgaroh",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Text14",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Daily(vs Yesterday)",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 62,
+                      "textAlign": "CENTER",
+                      "widgetId": "ftcwnl6ndp",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "3ky0u0ktis",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING2"
+                    },
+                    {
+                      "widgetName": "Text15",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Today_view_data.data[0][\"count_today\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n;\n\t}\n}()\n}}",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "esc8x0qznw",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "3ky0u0ktis",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text16",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{\nfunction changepercent() {\n\tlet n = ((Today_view_data.data[0][\"count_today\"]-Yesterday_view_data.data[0][\"count_yesterday\"])/(Yesterday_view_data.data[0][\"count_yesterday\"])*100)\n\tif (n > 0){\n\t\treturn (n).toFixed(2) + \"% more than yesterday\";\n\t}\n  else if(n < 0){\n    return (n).toFixed(2) + \"% less than yesterday\";\n\t}\n}()\n}}",
+                      "key": "2wf7c0b5kx",
+                      "rightColumn": 51,
+                      "textAlign": "LEFT",
+                      "widgetId": "ldbt164ej6",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#3366FF",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "3ky0u0ktis",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton5",
+                      "buttonColor": "#3366FF",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 51,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "yfe2tdxnbx",
+                      "rightColumn": 55,
+                      "iconName": "trending-up",
+                      "widgetId": "fcsf5vghct",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "3ky0u0ktis",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "key": "vi7e9prm0d"
+                }
+              ],
+              "key": "yu5secbohb"
             }
           ]
         },
@@ -2320,6 +2867,46 @@
             }
           ],
           [
+            {
+              "id": "Facebook_Current_month_Data",
+              "name": "Current_month_Data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment()",
+                "moment().format(\"YYYY-MM-01\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_Current_year_view",
+              "name": "Current_year_view",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().format(\"YYYY-01-01\")",
+                "moment()"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_Last_Year_view",
+              "name": "Last_Year_view",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().add(-1, 'year').format(\"YYYY-12-31\")",
+                "moment().add(-1, 'year').format(\"YYYY-01-01\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_Prev_month_data",
+              "name": "Prev_month_data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().add(-1, 'month').format(\"YYYY-MM-01\")",
+                "moment().add(-1, 'month').format(\"YYYY-MM-31\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Facebook_Sum_total_view",
               "name": "Sum_total_view",
@@ -2336,9 +2923,18 @@
               "name": "Table_view_trending",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+                "moment()",
+                "moment().format(\"YYYY-MM-01\")"
+              ],
+              "timeoutInMillisecond": 20000
+            },
+            {
+              "id": "Facebook_Today_view_data",
+              "name": "Today_view_data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment()",
+                "moment().add(-1, 'day')"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -2431,6 +3027,16 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Facebook_Yesterday_view_data",
+              "name": "Yesterday_view_data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().add(-3, 'day')",
+                "moment().add(-2, 'day')"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Facebook_total_view_hrs",
               "name": "total_view_hrs",
               "pluginType": "DB",
@@ -2513,6 +3119,9 @@
           "Canvas5Copy4Copy1",
           "Canvas5Copy4Copy2",
           "Canvas5Copy4Copy3",
+          "Canvas6",
+          "Canvas6Copy",
+          "Canvas6CopyCopy",
           "Chart1",
           "Chart2",
           "Chart3",
@@ -2541,6 +3150,9 @@
           "IconButton4Copy4Copy1",
           "IconButton4Copy4Copy2",
           "IconButton4Copy4Copy3",
+          "IconButton5",
+          "IconButton5Copy",
+          "IconButton5CopyCopy",
           "MainContainer",
           "Start_date",
           "Table1",
@@ -2564,8 +3176,20 @@
           "Text13Copy4Copy1",
           "Text13Copy4Copy2",
           "Text13Copy4Copy3",
+          "Text14",
+          "Text14Copy",
+          "Text14CopyCopy",
+          "Text15",
+          "Text15Copy",
+          "Text15CopyCopy",
+          "Text16",
+          "Text16Copy",
+          "Text16CopyCopy",
           "Text7",
-          "Text8"
+          "Text8",
+          "current_prev_month",
+          "current_prev_year",
+          "dailyvsyesterday"
         ],
         "validOnPageLoadActions": true,
         "id": "Facebook",

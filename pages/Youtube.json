@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 3470,
+          "bottomRow": 3800,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -940,6 +940,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "onDateSelected"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
                       "displayName": "DatePicker",
@@ -958,13 +961,17 @@
                         }
                       ],
                       "leftColumn": 0,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
                       "isDisabled": false,
                       "key": "6f5u04yw78",
                       "onDateSelected": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\n\tTable_view_trending.run();\n})() }}",
                       "isRequired": false,
                       "rightColumn": 32,
-                      "defaultDate": "2022-01-01T00:00:00.000+05:30",
+                      "defaultDate": "{{moment().add(-30, 'day')}}",
                       "widgetId": "fflxvshls5",
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
@@ -2055,6 +2062,68 @@
                 "channel_display_name": 233,
                 "category": 176
               }
+            },
+            {
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 346,
+              "bottomRow": 378,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "l9l0vu0b43": {
+                  "seriesName": "Sales",
+                  "data": "{{Daily_change_data.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.count_current } })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.l9l0vu0b43.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "u9lzs4hpml",
+              "rightColumn": 32,
+              "widgetId": "x9qu4smruq",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "xAxisName": "Product Line",
+              "chartType": "COLUMN_CHART"
             }
           ]
         },
@@ -2164,6 +2233,16 @@
             }
           ],
           [
+            {
+              "id": "Youtube_Daily_change_data",
+              "name": "Daily_change_data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment()",
+                "moment().add(-1, 'day')"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Youtube_Percentage_of_video_on_channel",
               "name": "Percentage_of_video_on_channel",
@@ -2297,6 +2376,7 @@
           "Canvas6CopyCopy1Copy",
           "Category_select",
           "Channel_select",
+          "Chart1",
           "Container2",
           "End_date",
           "IconButton2",
