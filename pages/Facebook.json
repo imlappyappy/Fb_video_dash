@@ -200,7 +200,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     }
                   ],
                   "key": "vi7e9prm0d"
@@ -382,7 +382,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     }
                   ],
                   "key": "vi7e9prm0d"
@@ -564,7 +564,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     }
                   ],
                   "key": "vi7e9prm0d"
@@ -671,7 +671,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy4Copy3",
@@ -824,7 +824,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy4Copy2",
@@ -968,7 +968,7 @@
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "f6nls6c3to",
-                      "rightColumn": 53,
+                      "rightColumn": 54,
                       "iconName": "rig",
                       "widgetId": "c6suazf4tw",
                       "isVisible": true,
@@ -977,7 +977,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy4Copy1",
@@ -1130,7 +1130,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy4Copy",
@@ -1283,7 +1283,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy4",
@@ -1427,7 +1427,7 @@
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "f6nls6c3to",
-                      "rightColumn": 53,
+                      "rightColumn": 54,
                       "iconName": "send-message",
                       "widgetId": "ef0zzmfmuz",
                       "isVisible": true,
@@ -1436,7 +1436,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy3",
@@ -1589,7 +1589,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy2",
@@ -1742,7 +1742,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy1",
@@ -1895,7 +1895,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13Copy",
@@ -1954,8 +1954,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 138,
-              "bottomRow": 170,
+              "topRow": 93,
+              "bottomRow": 125,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2012,36 +2012,6 @@
               "chartName": "Top 10 Domain by view",
               "xAxisName": "",
               "chartType": "COLUMN_CHART"
-            },
-            {
-              "widgetName": "Button1",
-              "buttonColor": "#3366FF",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca02633.svg",
-              "topRow": 1,
-              "bottomRow": 7,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 9.5625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 0,
-              "dynamicBindingPathList": [],
-              "text": "Facebook Video Dashboard",
-              "isDisabled": false,
-              "key": "ncg7u9ro2y",
-              "rightColumn": 64,
-              "isDefaultClickDisabled": true,
-              "widgetId": "i59wr64xuh",
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
             },
             {
               "boxShadow": "VARIANT2",
@@ -2317,8 +2287,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 138,
-              "bottomRow": 170,
+              "topRow": 93,
+              "bottomRow": 125,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2383,8 +2353,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 91,
-              "bottomRow": 138,
+              "topRow": 125,
+              "bottomRow": 160,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2399,37 +2369,16 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.hct1yewd49.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \" Domainwise\",\n      \"showvalues\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showLegend\": \"0\",\n      \"showpercentintooltip\": \"0\",\n      \"enablemultislicing\": \"1\",\n      \"theme\": \"fusion\"\n    },\n\t\t\"data\":{{Percentage_Watch_hrs_of_domain.data.map((row) => { \n      return { label: row.name, value: row.watch_hrs } \n   })}}\n  }\n}",
               "onDataPointClick": "",
               "key": "pluz5zdfwd",
-              "rightColumn": 64,
+              "rightColumn": 24,
               "widgetId": "px4c299qd2",
               "isVisible": true,
               "version": 1,
@@ -2438,9 +2387,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Avg Watch Hrs Domainwise",
+              "chartName": "Avg Watch Hrs",
               "xAxisName": "",
-              "chartType": "PIE_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "setAdaptiveYMin": false,
@@ -2456,7 +2405,7 @@
               "chartData": {
                 "jny34wnpp0": {
                   "seriesName": "",
-                  "data": "{{Running_view_domainwise_.data.map( (obj) =>{ return  {'x': obj.timestamp,'y': obj.total_video_view } })}}"
+                  "data": "{{Running_view_domainwise_.data.map( (obj) =>{ return  {'x': moment(obj.timestamp).format(\"YYYY-MM-DD\"),'y': obj.total_video_view } })}}"
                 }
               },
               "animateLoading": true,
@@ -2605,7 +2554,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "widgetName": "Text13",
@@ -2665,14 +2614,14 @@
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
               "topRow": 60,
-              "bottomRow": 91,
+              "bottomRow": 93,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "bw06liw84v": {
                   "seriesName": "Male",
-                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.male_viewer } })}}"
+                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': moment(obj.timestamp).format(\"YYYY-MM-DD\"), 'y': obj.male_viewer } })}}"
                 },
                 "w1rkqu8jfz": {
                   "seriesName": "Female",
@@ -2749,7 +2698,7 @@
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 60,
-              "bottomRow": 91,
+              "bottomRow": 93,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -3029,13 +2978,101 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
-                      "buttonVariant": "PRIMARY"
+                      "buttonVariant": "SECONDARY"
                     }
                   ],
                   "key": "vi7e9prm0d"
                 }
               ],
               "key": "yu5secbohb"
+            },
+            {
+              "boxShadow": "NONE",
+              "widgetName": "Container3",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 0,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.4375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas7",
+                  "rightColumn": 250.5,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "113ovop41p",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "ofth2yp5z6",
+                  "minHeight": 400,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Text17",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 18,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Facebook Video Dashboard",
+                      "key": "si3qyugjmv",
+                      "rightColumn": 45,
+                      "textAlign": "CENTER",
+                      "widgetId": "2jeymxqvwa",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#FFFFFF",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "113ovop41p",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING2"
+                    }
+                  ],
+                  "key": "qbz7knam3r"
+                }
+              ],
+              "borderWidth": "0",
+              "key": "08z9ylhlbu",
+              "backgroundColor": "#3366FF",
+              "rightColumn": 64,
+              "widgetId": "ofth2yp5z6",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0"
             }
           ]
         },
@@ -3265,17 +3302,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Facebook_Running_view_domainwise_",
-              "name": "Running_view_domainwise_",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 20000
-            },
-            {
               "id": "Facebook_Top_trending_domain",
               "name": "Top_trending_domain",
               "pluginType": "DB",
@@ -3297,10 +3323,22 @@
               ],
               "timeoutInMillisecond": 15000
             }
+          ],
+          [
+            {
+              "id": "Facebook_Running_view_domainwise_",
+              "name": "Running_view_domainwise_",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 20000
+            }
           ]
         ],
         "widgetNames": [
-          "Button1",
           "Canvas4",
           "Canvas5",
           "Canvas5Copy",
@@ -3316,6 +3354,7 @@
           "Canvas6Copy",
           "Canvas6CopyCopy",
           "Canvas6CopyCopy1",
+          "Canvas7",
           "Chart1",
           "Chart2",
           "Chart3",
@@ -3332,6 +3371,7 @@
           "Container2Copy4Copy1",
           "Container2Copy4Copy2",
           "Container2Copy4Copy3",
+          "Container3",
           "Domain_select",
           "End_date",
           "IconButton4",
@@ -3383,6 +3423,7 @@
           "Text16Copy",
           "Text16CopyCopy",
           "Text16CopyCopy1",
+          "Text17",
           "Text7",
           "Text8",
           "current_prev_month",

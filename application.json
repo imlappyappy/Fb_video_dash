@@ -6,6 +6,12 @@
   "color": "#C2DAF0",
   "icon": "bar-graph",
   "slug": "video-dashboard",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "evaluationVersion": 2,
   "publishedModeThemeId": "620f72e0eb0278799e88c1f1",
   "editModeThemeId": "620f72e0eb0278799e88c1f1",
