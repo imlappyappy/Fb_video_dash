@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(cast(sorry as decimal)) as Total_sorry\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\tAND created_time > '{{video_select.selectedOptionValue}}';"
+      "body": "SELECT SUM(cast(sorry as decimal)) as Total_sorry\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\t;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -31,8 +31,7 @@
     "jsonPathKeys": [
       "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"",
       "End_date.selectedDate",
-      "Start_date.selectedDate",
-      "video_select.selectedOptionValue"
+      "Start_date.selectedDate"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

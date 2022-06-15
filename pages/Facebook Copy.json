@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1930,
+          "bottomRow": 1900,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -29,34 +29,36 @@
             {
               "tabId": "",
               "boxShadow": "NONE",
-              "widgetName": "Container6",
-              "borderColor": "transparent",
+              "widgetName": "Container9",
+              "borderColor": "#3366FF",
               "isCanvas": true,
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 29,
-              "bottomRow": 45,
+              "topRow": 16,
+              "bottomRow": 48,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "animateLoading": true,
-              "parentColumnSpace": 3.9140625,
+              "parentColumnSpace": 1.345458984375,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
+              "dynamicBindingPathList": [],
               "children": [
                 {
-                  "rightColumn": 250.5,
-                  "widgetName": "Canvas10",
+                  "rightColumn": 86.109375,
+                  "widgetName": "Canvas13",
                   "detachFromLayout": true,
-                  "widgetId": "9dpsa2mkse",
+                  "widgetId": "f7lalqukwc",
                   "containerStyle": "none",
-                  "bottomRow": 167,
+                  "bottomRow": 121.3359375,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "version": 1,
-                  "parentId": "097hleajoj",
+                  "parentId": "nq3ilgmfdq",
                   "props": {
                     "containerStyle": "none",
                     "canExtend": false,
@@ -64,7 +66,7 @@
                     "children": []
                   },
                   "isLoading": false,
-                  "minHeight": 167,
+                  "minHeight": 121.3359375,
                   "renderMode": "CANVAS",
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
@@ -76,18 +78,18 @@
                       "isCanvas": true,
                       "displayName": "Stats Box",
                       "iconSVG": "/static/media/icon.382a7c7b.svg",
-                      "widgetId": "1qveacpi9r",
-                      "topRow": 0,
-                      "bottomRow": 16,
+                      "widgetId": "3tawnejy3c",
+                      "topRow": 15,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "isVisible": true,
                       "type": "STATBOX_WIDGET",
                       "hideCard": false,
-                      "parentId": "9dpsa2mkse",
+                      "parentId": "f7lalqukwc",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 3.9140625,
+                      "parentColumnSpace": 1.345458984375,
                       "leftColumn": 32,
                       "children": [
                         {
@@ -95,7 +97,7 @@
                           "rightColumn": 167,
                           "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "4faqtmh620",
+                          "widgetId": "yb1v554jk5",
                           "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 140,
@@ -105,7 +107,7 @@
                           "canExtend": false,
                           "version": 1,
                           "hideCard": true,
-                          "parentId": "1qveacpi9r",
+                          "parentId": "3tawnejy3c",
                           "minHeight": 140,
                           "renderMode": "CANVAS",
                           "isLoading": false,
@@ -130,13 +132,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
-                              "widgetId": "sls2yjj2h0",
+                              "widgetId": "ddo7xc3qhf",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#999999",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "4faqtmh620",
+                              "parentId": "yb1v554jk5",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING2"
@@ -168,13 +170,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 37,
                               "textAlign": "LEFT",
-                              "widgetId": "x6ym7o1is9",
+                              "widgetId": "shd1ybalqw",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "4faqtmh620",
+                              "parentId": "yb1v554jk5",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING1"
@@ -206,13 +208,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 51,
                               "textAlign": "LEFT",
-                              "widgetId": "rej8bqnhdy",
+                              "widgetId": "qflh6ui1hq",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#3366FF",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "4faqtmh620",
+                              "parentId": "yb1v554jk5",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "PARAGRAPH2"
@@ -235,11 +237,11 @@
                               "key": "yfe2tdxnbx",
                               "rightColumn": 55,
                               "iconName": "trending-up",
-                              "widgetId": "gve8azq7d7",
+                              "widgetId": "wzv22fzoxc",
                               "buttonStyle": "PRIMARY",
                               "isVisible": true,
                               "version": 1,
-                              "parentId": "4faqtmh620",
+                              "parentId": "yb1v554jk5",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "CIRCLE",
@@ -258,18 +260,18 @@
                       "isCanvas": true,
                       "displayName": "Stats Box",
                       "iconSVG": "/static/media/icon.382a7c7b.svg",
-                      "widgetId": "rg4h8dvszo",
-                      "topRow": 0,
-                      "bottomRow": 16,
+                      "widgetId": "rr8o8lqapf",
+                      "topRow": 15,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "isVisible": true,
                       "type": "STATBOX_WIDGET",
                       "hideCard": false,
-                      "parentId": "9dpsa2mkse",
+                      "parentId": "f7lalqukwc",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 3.9140625,
+                      "parentColumnSpace": 1.345458984375,
                       "leftColumn": 0,
                       "children": [
                         {
@@ -277,7 +279,7 @@
                           "rightColumn": 167,
                           "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "oa7vnq4bdv",
+                          "widgetId": "4vucy0tx4c",
                           "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 140,
@@ -287,7 +289,7 @@
                           "canExtend": false,
                           "version": 1,
                           "hideCard": true,
-                          "parentId": "rg4h8dvszo",
+                          "parentId": "rr8o8lqapf",
                           "minHeight": 140,
                           "renderMode": "CANVAS",
                           "isLoading": false,
@@ -312,13 +314,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
-                              "widgetId": "r0h40xcjc8",
+                              "widgetId": "fplcvxf6hq",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#999999",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "oa7vnq4bdv",
+                              "parentId": "4vucy0tx4c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING2"
@@ -350,13 +352,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 37,
                               "textAlign": "LEFT",
-                              "widgetId": "hm0oq74lvn",
+                              "widgetId": "yzl5hkiewi",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "oa7vnq4bdv",
+                              "parentId": "4vucy0tx4c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING1"
@@ -388,13 +390,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 51,
                               "textAlign": "LEFT",
-                              "widgetId": "mcjbbqizic",
+                              "widgetId": "orgmixj9pb",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#3366FF",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "oa7vnq4bdv",
+                              "parentId": "4vucy0tx4c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "PARAGRAPH2"
@@ -417,11 +419,11 @@
                               "key": "yfe2tdxnbx",
                               "rightColumn": 55,
                               "iconName": "trending-up",
-                              "widgetId": "tak96m3yew",
+                              "widgetId": "vj5qjq1cuq",
                               "buttonStyle": "PRIMARY",
                               "isVisible": true,
                               "version": 1,
-                              "parentId": "oa7vnq4bdv",
+                              "parentId": "4vucy0tx4c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "CIRCLE",
@@ -432,66 +434,7 @@
                         }
                       ],
                       "key": "yu5secbohb"
-                    }
-                  ]
-                }
-              ],
-              "borderWidth": "0",
-              "key": "iwqfe1iv9m",
-              "backgroundColor": "#FFFFFF",
-              "rightColumn": 24,
-              "widgetId": "097hleajoj",
-              "containerStyle": "card",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "0"
-            },
-            {
-              "tabId": "",
-              "boxShadow": "NONE",
-              "widgetName": "Container5",
-              "borderColor": "transparent",
-              "isCanvas": true,
-              "displayName": "Container",
-              "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 13,
-              "bottomRow": 29,
-              "parentRowSpace": 10,
-              "type": "CONTAINER_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 3.9140625,
-              "leftColumn": 0,
-              "children": [
-                {
-                  "rightColumn": 250.5,
-                  "widgetName": "Canvas9",
-                  "detachFromLayout": true,
-                  "widgetId": "ije3ymq6o0",
-                  "containerStyle": "none",
-                  "bottomRow": 170,
-                  "topRow": 0,
-                  "parentRowSpace": 1,
-                  "isVisible": true,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "version": 1,
-                  "parentId": "a1fzepqp0l",
-                  "props": {
-                    "containerStyle": "none",
-                    "canExtend": false,
-                    "detachFromLayout": true,
-                    "children": []
-                  },
-                  "isLoading": false,
-                  "minHeight": 167,
-                  "renderMode": "CANVAS",
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "children": [
+                    },
                     {
                       "widgetName": "current_prev_month",
                       "backgroundColor": "white",
@@ -499,18 +442,18 @@
                       "isCanvas": true,
                       "displayName": "Stats Box",
                       "iconSVG": "/static/media/icon.382a7c7b.svg",
-                      "widgetId": "xuc1slt2yl",
+                      "widgetId": "vevnp7ywid",
                       "topRow": 0,
                       "bottomRow": 15,
                       "parentRowSpace": 10,
                       "isVisible": true,
                       "type": "STATBOX_WIDGET",
                       "hideCard": false,
-                      "parentId": "ije3ymq6o0",
+                      "parentId": "f7lalqukwc",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 3.9140625,
+                      "parentColumnSpace": 1.345458984375,
                       "leftColumn": 32,
                       "children": [
                         {
@@ -518,7 +461,7 @@
                           "rightColumn": 167,
                           "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "72w3c4ldqh",
+                          "widgetId": "eikrsujs21",
                           "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 140,
@@ -528,7 +471,7 @@
                           "canExtend": false,
                           "version": 1,
                           "hideCard": true,
-                          "parentId": "xuc1slt2yl",
+                          "parentId": "vevnp7ywid",
                           "minHeight": 140,
                           "renderMode": "CANVAS",
                           "isLoading": false,
@@ -553,13 +496,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
-                              "widgetId": "tv0gg31gly",
+                              "widgetId": "t2j0c4lbym",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#999999",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "72w3c4ldqh",
+                              "parentId": "eikrsujs21",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING2"
@@ -591,13 +534,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 37,
                               "textAlign": "LEFT",
-                              "widgetId": "r76mcd2l6a",
+                              "widgetId": "zqjfle735l",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "72w3c4ldqh",
+                              "parentId": "eikrsujs21",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING1"
@@ -629,13 +572,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 51,
                               "textAlign": "LEFT",
-                              "widgetId": "wmgaqus4gm",
+                              "widgetId": "aol1977bd7",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#3366FF",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "72w3c4ldqh",
+                              "parentId": "eikrsujs21",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "PARAGRAPH2"
@@ -658,11 +601,11 @@
                               "key": "yfe2tdxnbx",
                               "rightColumn": 55,
                               "iconName": "trending-up",
-                              "widgetId": "vwutu4ypfq",
+                              "widgetId": "8efog04u4x",
                               "buttonStyle": "PRIMARY",
                               "isVisible": true,
                               "version": 1,
-                              "parentId": "72w3c4ldqh",
+                              "parentId": "eikrsujs21",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "CIRCLE",
@@ -681,18 +624,18 @@
                       "isCanvas": true,
                       "displayName": "Stats Box",
                       "iconSVG": "/static/media/icon.382a7c7b.svg",
-                      "widgetId": "w2me5a8ar5",
+                      "widgetId": "vo87edofog",
                       "topRow": 0,
                       "bottomRow": 15,
                       "parentRowSpace": 10,
                       "isVisible": true,
                       "type": "STATBOX_WIDGET",
                       "hideCard": false,
-                      "parentId": "ije3ymq6o0",
+                      "parentId": "f7lalqukwc",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 3.9140625,
+                      "parentColumnSpace": 1.345458984375,
                       "leftColumn": 0,
                       "children": [
                         {
@@ -700,7 +643,7 @@
                           "rightColumn": 167,
                           "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "1xnek4pjwd",
+                          "widgetId": "xz1g89ojm9",
                           "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 140,
@@ -710,7 +653,7 @@
                           "canExtend": false,
                           "version": 1,
                           "hideCard": true,
-                          "parentId": "w2me5a8ar5",
+                          "parentId": "vo87edofog",
                           "minHeight": 140,
                           "renderMode": "CANVAS",
                           "isLoading": false,
@@ -735,13 +678,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
-                              "widgetId": "33oq6zmqup",
+                              "widgetId": "ojwktd8p6a",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#999999",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "1xnek4pjwd",
+                              "parentId": "xz1g89ojm9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING2"
@@ -773,13 +716,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 37,
                               "textAlign": "LEFT",
-                              "widgetId": "11qaq25flk",
+                              "widgetId": "ou74qgr99l",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "1xnek4pjwd",
+                              "parentId": "xz1g89ojm9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING1"
@@ -811,13 +754,13 @@
                               "key": "2wf7c0b5kx",
                               "rightColumn": 51,
                               "textAlign": "LEFT",
-                              "widgetId": "ftddwqg2pz",
+                              "widgetId": "1mdfcg86lf",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#3366FF",
                               "shouldScroll": false,
                               "version": 1,
-                              "parentId": "1xnek4pjwd",
+                              "parentId": "xz1g89ojm9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "PARAGRAPH2"
@@ -840,11 +783,11 @@
                               "key": "yfe2tdxnbx",
                               "rightColumn": 55,
                               "iconName": "trending-up",
-                              "widgetId": "yx899gbux2",
+                              "widgetId": "ubiu48gygl",
                               "buttonStyle": "PRIMARY",
                               "isVisible": true,
                               "version": 1,
-                              "parentId": "1xnek4pjwd",
+                              "parentId": "xz1g89ojm9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "CIRCLE",
@@ -859,11 +802,11 @@
                   ]
                 }
               ],
-              "borderWidth": "0",
-              "key": "iwqfe1iv9m",
+              "borderWidth": "2",
+              "key": "h35a7d6snx",
               "backgroundColor": "#FFFFFF",
               "rightColumn": 24,
-              "widgetId": "a1fzepqp0l",
+              "widgetId": "nq3ilgmfdq",
               "containerStyle": "card",
               "isVisible": true,
               "version": 1,
@@ -874,20 +817,390 @@
             },
             {
               "tabId": "",
-              "boxShadow": "NONE",
-              "widgetName": "Container4",
-              "borderColor": "transparent",
+              "boxShadow": "VARIANT2",
+              "widgetName": "Container8",
+              "borderColor": "#3366FF",
               "isCanvas": true,
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 45,
-              "bottomRow": 67,
+              "topRow": 7,
+              "bottomRow": 16,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 3.9140625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "rightColumn": 250.5,
+                  "widgetName": "Canvas12",
+                  "detachFromLayout": true,
+                  "widgetId": "htyc78lk0g",
+                  "containerStyle": "none",
+                  "bottomRow": 90,
+                  "topRow": 0,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "parentId": "42fnglbulu",
+                  "props": {
+                    "containerStyle": "none",
+                    "canExtend": false,
+                    "detachFromLayout": true,
+                    "children": []
+                  },
+                  "isLoading": false,
+                  "minHeight": 73.0625,
+                  "renderMode": "CANVAS",
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "video_select",
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Video Type",
+                      "topRow": 0,
+                      "bottomRow": 7,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "{\"label\": \"All video\",\n \"value\": \"{{moment().format(\"2020-01-01\")}}\"\n  }",
+                      "animateLoading": true,
+                      "parentColumnSpace": 3.9140625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
+                        }
+                      ],
+                      "options": "[\n  {\n    \"label\": \"All video\",\n    \"value\": {{moment().format(\"2020-01-01\")}}\n  },\n  {\n    \"label\": \"New video\",\n    \"value\": {{moment().format(\"YYYY-01-01\")}}\n  }\n]",
+                      "labelStyle": "BOLD",
+                      "placeholderText": "",
+                      "isDisabled": false,
+                      "key": "3kv1llgz2w",
+                      "isRequired": false,
+                      "rightColumn": 64,
+                      "widgetId": "yawjbvufem",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "htyc78lk0g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n\tToday_view_data.run();\n\tYesterday_view_data.run();\n\tCurrent_month_Data.run();\n\tPrev_month_data.run();\n\tCurrent_year_view.run();\n\tLast_Year_view.run();\n\tLast_year_month.run();\n})() }}"
+                    },
+                    {
+                      "widgetName": "Domain_select",
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Domain",
+                      "topRow": 0,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 3.9140625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{Domain_name.data.map((row) => { \n      return { label: row.domain, value: row.domain } \n   })\n}}",
+                      "labelStyle": "BOLD",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "v5i7piex6e",
+                      "isRequired": false,
+                      "rightColumn": 32,
+                      "widgetId": "b4qvibp585",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "htyc78lk0g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n\tToday_view_data.run();\n\tYesterday_view_data.run();\n\tCurrent_month_Data.run();\n\tPrev_month_data.run();\n\tCurrent_year_view.run();\n\tLast_Year_view.run();\n\tLast_year_month.run();\n})() }}"
+                    }
+                  ]
+                }
+              ],
+              "borderWidth": "2",
+              "key": "tiejzg5p4t",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 24,
+              "widgetId": "42fnglbulu",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0"
+            },
+            {
+              "tabId": "",
+              "boxShadow": "VARIANT2",
+              "widgetName": "Container7",
+              "borderColor": "#3366FF",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 7,
+              "bottomRow": 48,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 0.625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "rightColumn": 40,
+                  "widgetName": "Canvas11",
+                  "detachFromLayout": true,
+                  "widgetId": "rte7o231pl",
+                  "containerStyle": "none",
+                  "bottomRow": 40,
+                  "topRow": 0,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "parentId": "obpho4ci2z",
+                  "props": {
+                    "containerStyle": "none",
+                    "canExtend": false,
+                    "detachFromLayout": true,
+                    "children": []
+                  },
+                  "isLoading": false,
+                  "minHeight": 40,
+                  "renderMode": "CANVAS",
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Table1",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "domain",
+                        "current_month_views",
+                        "current_month_watch_hrs"
+                      ],
+                      "isVisibleDownload": true,
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                      "topRow": 4,
+                      "bottomRow": 40,
+                      "isSortable": true,
+                      "parentRowSpace": 10,
+                      "type": "TABLE_WIDGET",
+                      "defaultSelectedRow": "0",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "parentColumnSpace": 0.625,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.domain.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.current_month_views.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.current_month_watch_hrs.computedValue"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "primaryColumns": {
+                        "domain": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "domain",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Domain",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.domain))}}"
+                        },
+                        "current_month_views": {
+                          "index": 1,
+                          "width": 150,
+                          "id": "current_month_views",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Current Month Views",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.current_month_views))}}"
+                        },
+                        "current_month_watch_hrs": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "current_month_watch_hrs",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Current Month Watch Hrs",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.current_month_watch_hrs))}}"
+                        }
+                      },
+                      "delimiter": ",",
+                      "key": "2rghavbl3u",
+                      "derivedColumns": {},
+                      "rightColumn": 64,
+                      "textSize": "PARAGRAPH",
+                      "widgetId": "k4plda686f",
+                      "isVisibleFilters": true,
+                      "tableData": "{{Table_view_trending.data}}",
+                      "isVisible": true,
+                      "label": "Data",
+                      "searchKey": "",
+                      "enableClientSideSearch": true,
+                      "version": 3,
+                      "totalRecordsCount": 0,
+                      "parentId": "rte7o231pl",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75,
+                        "domain": 191,
+                        "total_video_views": 181,
+                        "current_month_views": 177
+                      }
+                    },
+                    {
+                      "widgetName": "Text18",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 0.625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Table View",
+                      "key": "dsveqr32ld",
+                      "rightColumn": 25.6,
+                      "textAlign": "LEFT",
+                      "widgetId": "mrn0z8ktvu",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "rte7o231pl",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING3"
+                    }
+                  ]
+                }
+              ],
+              "borderWidth": "2",
+              "key": "tiejzg5p4t",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 64,
+              "widgetId": "obpho4ci2z",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0"
+            },
+            {
+              "tabId": "",
+              "boxShadow": "VARIANT2",
+              "widgetName": "Container4",
+              "borderColor": "#3366FF",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 48,
+              "bottomRow": 70,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 9.5625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "rightColumn": 612,
@@ -1023,7 +1336,7 @@
                               "key": "6f5u04yw78",
                               "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n})() }}",
                               "isRequired": false,
-                              "defaultDate": "{{moment().format(\"YYYY-MM-01\")}}",
+                              "defaultDate": "{{\nfunction dateClash() {\n\tlet n = moment().format(\"YYYY-MM-01\")\n\tif (n == End_date.selectedDate){\n\t\treturn moment().add(-1, 'month').format(\"YYYY-MM-30\");\n\t}\n\telse{\n\treturn moment().format(\"YYYY-MM-01\");\n\t}\n}()\n}}",
                               "rightColumn": 31,
                               "widgetId": "7ommebuqbb",
                               "isVisible": true,
@@ -2671,7 +2984,7 @@
                   ]
                 }
               ],
-              "borderWidth": "0",
+              "borderWidth": "2",
               "key": "iwqfe1iv9m",
               "backgroundColor": "#FFFFFF",
               "rightColumn": 64,
@@ -2689,8 +3002,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 99,
-              "bottomRow": 131,
+              "topRow": 102,
+              "bottomRow": 134,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2732,8 +3045,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 99,
-              "bottomRow": 131,
+              "topRow": 102,
+              "bottomRow": 134,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2777,8 +3090,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 131,
-              "bottomRow": 166,
+              "topRow": 134,
+              "bottomRow": 169,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2802,7 +3115,7 @@
               "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \" Domainwise\",\n      \"showvalues\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showLegend\": \"0\",\n      \"showpercentintooltip\": \"0\",\n      \"enablemultislicing\": \"1\",\n      \"theme\": \"fusion\"\n    },\n\t\t\"data\":{{Percentage_Watch_hrs_of_domain.data.map((row) => { \n      return { label: row.name, value: row.watch_hrs } \n   })}}\n  }\n}",
               "onDataPointClick": "",
               "key": "pluz5zdfwd",
-              "rightColumn": 24,
+              "rightColumn": 32,
               "widgetId": "px4c299qd2",
               "isVisible": true,
               "version": 1,
@@ -2821,8 +3134,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 67,
-              "bottomRow": 99,
+              "topRow": 70,
+              "bottomRow": 102,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2837,36 +3150,15 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.jny34wnpp0.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"line\",\n  \"dataSource\": {\n    \"chart\": {\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{Running_view_domainwise_.data.map( (obj) =>{ return  {'label': moment(obj.timestamp).format(\"YYYY-MM-DD\"),'value': obj.total_video_view } })}}\n  }\n}",
               "key": "io874kgdgz",
-              "rightColumn": 32,
+              "rightColumn": 64,
               "widgetId": "0brvuyiy8z",
               "isVisible": true,
               "version": 1,
@@ -2877,15 +3169,15 @@
               "yAxisName": "",
               "chartName": "Video Views Trend",
               "xAxisName": "",
-              "chartType": "LINE_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "widgetName": "Chart8",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 67,
-              "bottomRow": 99,
+              "topRow": 134,
+              "bottomRow": 169,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2920,7 +3212,7 @@
                 }
               ],
               "leftColumn": 32,
-              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \" Domainwise\",\n      \"showvalues\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showLegend\": \"1\",\n      \"showpercentintooltip\": \"0\",\n      \"enablemultislicing\": \"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{Gender_count_viewer.data.map( (obj) =>{ return  {'label': moment(obj.timestamp).format(\"YYYY-MM-DD\"), 'value': obj.male_viewer } })}}\n  }\n}",
+              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \" Genderwise\",\n      \"showvalues\": \"1\",\n\t\t\t\"showLabels\": \"1\",\n\t\t\t\"showLegend\": \"0\",\n      \"showpercentintooltip\": \"0\",\n      \"enablemultislicing\": \"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\":[\n        {\n            \"label\": \"Female\",\n            \"value\": {{Gender_count_viewer.data[0][\"female_viewer\"]}}\n        },\n        {\n            \"label\": \"Male\",\n            \"value\": {{Gender_count_viewer.data[0][\"male_viewer\"]}}\n        },\n        {\n            \"label\": \"Undefined\",\n            \"value\": {{Gender_count_viewer.data[0][\"undefined_viewer\"]}}\n        }\n    ]\n  }\n}",
               "key": "j3vl2lcv1g",
               "rightColumn": 64,
               "widgetId": "1xz5tz2h2k",
@@ -2931,128 +3223,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Viewer's Distribution Genderwise",
+              "chartName": "Viewer's Distribution",
               "xAxisName": "",
-              "chartType": "LINE_CHART"
-            },
-            {
-              "widgetName": "Table1",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "domain",
-                "current_month_views",
-                "current_month_watch_hrs"
-              ],
-              "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
-              "displayName": "Table",
-              "iconSVG": "/static/media/icon.db8a9cbd.svg",
-              "topRow": 6,
-              "bottomRow": 45,
-              "isSortable": true,
-              "parentRowSpace": 10,
-              "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
-              "hideCard": false,
-              "animateLoading": true,
-              "dynamicTriggerPathList": [],
-              "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.domain.computedValue"
-                },
-                {
-                  "key": "primaryColumns.current_month_views.computedValue"
-                },
-                {
-                  "key": "primaryColumns.current_month_watch_hrs.computedValue"
-                }
-              ],
-              "leftColumn": 24,
-              "primaryColumns": {
-                "domain": {
-                  "index": 0,
-                  "width": 150,
-                  "id": "domain",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Domain",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.domain))}}"
-                },
-                "current_month_views": {
-                  "index": 1,
-                  "width": 150,
-                  "id": "current_month_views",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Current Month Views",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.current_month_views))}}"
-                },
-                "current_month_watch_hrs": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "current_month_watch_hrs",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Current Month Watch Hrs",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.current_month_watch_hrs))}}"
-                }
-              },
-              "delimiter": ",",
-              "key": "2rghavbl3u",
-              "derivedColumns": {},
-              "rightColumn": 64,
-              "textSize": "PARAGRAPH",
-              "widgetId": "vylsikcaf4",
-              "isVisibleFilters": true,
-              "tableData": "{{Table_view_trending.data}}",
-              "isVisible": true,
-              "label": "Data",
-              "searchKey": "",
-              "enableClientSideSearch": true,
-              "version": 3,
-              "totalRecordsCount": 0,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER",
-              "columnSizeMap": {
-                "task": 245,
-                "step": 62,
-                "status": 75,
-                "domain": 191,
-                "total_video_views": 181,
-                "current_month_views": 177
-              }
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "boxShadow": "NONE",
@@ -3062,7 +3235,7 @@
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
               "topRow": 0,
-              "bottomRow": 6,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -3099,7 +3272,7 @@
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 0,
-                      "bottomRow": 4,
+                      "bottomRow": 5,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -3141,98 +3314,6 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "0"
-            },
-            {
-              "widgetName": "Domain_select",
-              "isFilterable": false,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onOptionChange"
-                }
-              ],
-              "displayName": "Select",
-              "iconSVG": "/static/media/icon.bd99caba.svg",
-              "labelText": "Domain",
-              "topRow": 6,
-              "bottomRow": 11,
-              "parentRowSpace": 10,
-              "type": "SELECT_WIDGET",
-              "serverSideFiltering": false,
-              "hideCard": false,
-              "defaultOptionValue": "",
-              "animateLoading": true,
-              "parentColumnSpace": 9.5625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onOptionChange"
-                }
-              ],
-              "leftColumn": 0,
-              "dynamicBindingPathList": [
-                {
-                  "key": "options"
-                }
-              ],
-              "options": "{{Domain_name.data.map((row) => { \n      return { label: row.domain, value: row.domain } \n   })\n}}",
-              "labelStyle": "BOLD",
-              "placeholderText": "Select option",
-              "isDisabled": false,
-              "key": "v5i7piex6e",
-              "isRequired": false,
-              "rightColumn": 12,
-              "widgetId": "xm2xumyhlv",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n\tToday_view_data.run();\n\tYesterday_view_data.run();\n\tCurrent_month_Data.run();\n\tPrev_month_data.run();\n\tCurrent_year_view.run();\n\tLast_Year_view.run();\n\tLast_year_month.run();\n})() }}"
-            },
-            {
-              "widgetName": "video_select",
-              "isFilterable": false,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onOptionChange"
-                }
-              ],
-              "displayName": "Select",
-              "iconSVG": "/static/media/icon.bd99caba.svg",
-              "labelText": "Video Type",
-              "topRow": 6,
-              "bottomRow": 13,
-              "parentRowSpace": 10,
-              "type": "SELECT_WIDGET",
-              "serverSideFiltering": false,
-              "hideCard": false,
-              "defaultOptionValue": "{\n  \"label\": \"All video\",\n  \"value\": \"All video\"\n}",
-              "animateLoading": true,
-              "parentColumnSpace": 10.4375,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onOptionChange"
-                }
-              ],
-              "leftColumn": 12,
-              "dynamicBindingPathList": [
-                {
-                  "key": "options"
-                }
-              ],
-              "options": "[\n  {\n    \"label\": \"All video\",\n    \"value\": {{moment().format(\"2020-01-01\")}}\n  },\n  {\n    \"label\": \"New video\",\n    \"value\": {{moment().format(\"YYYY-01-01\")}}\n  }\n]",
-              "labelStyle": "BOLD",
-              "placeholderText": "{\n  \"label\": \"All video\",\n  \"value\": \"All video\"\n}",
-              "isDisabled": false,
-              "key": "3kv1llgz2w",
-              "isRequired": false,
-              "rightColumn": 24,
-              "widgetId": "3lgfxow6vk",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n\tToday_view_data.run();\n\tYesterday_view_data.run();\n\tCurrent_month_Data.run();\n\tPrev_month_data.run();\n\tCurrent_year_view.run();\n\tLast_Year_view.run();\n\tLast_year_month.run();\n})() }}"
             }
           ]
         },
@@ -3254,7 +3335,6 @@
               "jsonPathKeys": [
                 "moment()",
                 "moment().format(\"YYYY-MM-01\")",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3266,7 +3346,6 @@
               "jsonPathKeys": [
                 "moment().format(\"YYYY-01-01\")",
                 "moment()",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3277,7 +3356,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-12-31\")",
-                "video_select.selectedOptionValue",
                 "moment().add(-1, 'year').format(\"YYYY-01-01\")",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -3290,7 +3368,6 @@
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-MM-01\")",
                 "moment().add(-1, 'year').format(\"YYYY-MM-31\")",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3302,7 +3379,6 @@
               "jsonPathKeys": [
                 "moment().add(-1, 'month').format(\"YYYY-MM-01\")",
                 "moment().add(-1, 'month').format(\"YYYY-MM-31\")",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3314,7 +3390,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 20000
@@ -3348,7 +3423,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3360,7 +3434,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 15000
@@ -3372,7 +3445,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 20000
@@ -3384,7 +3456,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 15000
@@ -3396,7 +3467,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 15000
@@ -3408,7 +3478,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 20000
@@ -3420,7 +3489,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3432,7 +3500,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3444,7 +3511,6 @@
               "jsonPathKeys": [
                 "moment().add(-3, 'day')",
                 "moment().add(-2, 'day')",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -3456,7 +3522,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 20000
@@ -3464,13 +3529,23 @@
           ],
           [
             {
+              "id": "Facebook Copy_Gender_count_viewer",
+              "name": "Gender_count_viewer",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Facebook Copy_Percentage_Watch_hrs_of_domain",
               "name": "Percentage_Watch_hrs_of_domain",
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "video_select.selectedOptionValue"
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3498,25 +3573,12 @@
           ],
           [
             {
-              "id": "Facebook Copy_Gender_count_viewer",
-              "name": "Gender_count_viewer",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "video_select.selectedOptionValue",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Facebook Copy_Running_view_domainwise_",
               "name": "Running_view_domainwise_",
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
-                "video_select.selectedOptionValue",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 20000
@@ -3524,7 +3586,9 @@
           ]
         ],
         "widgetNames": [
-          "Canvas10",
+          "Canvas11",
+          "Canvas12",
+          "Canvas13",
           "Canvas4",
           "Canvas5",
           "Canvas5Copy",
@@ -3542,7 +3606,6 @@
           "Canvas6CopyCopy1",
           "Canvas7",
           "Canvas8",
-          "Canvas9",
           "Chart1",
           "Chart2",
           "Chart3",
@@ -3561,8 +3624,9 @@
           "Container2Copy4Copy3",
           "Container3",
           "Container4",
-          "Container5",
-          "Container6",
+          "Container7",
+          "Container8",
+          "Container9",
           "Domain_select",
           "End_date",
           "IconButton4",
@@ -3615,6 +3679,7 @@
           "Text16CopyCopy",
           "Text16CopyCopy1",
           "Text17",
+          "Text18",
           "Text7",
           "Text8",
           "current_prev_month",
@@ -3632,7 +3697,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

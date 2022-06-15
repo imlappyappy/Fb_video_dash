@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Total_anger_count",
+    "name": "Yesterday_data_view",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,12 +12,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Facebook Copy",
+    "pageId": "Youtube Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(cast(anger as decimal)) as Total_anger\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
+      "body": "SELECT Date_trunc('day', date)\tAS timestamp, \nSUM(views) as COUNT_yesterday\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().add(-5, 'day')}}':: date\n  \t\tAND date < '{{moment().add(-4, 'day')}}':: date\n\t\t\tAND time_published > {{Video_type.selectedOptionValue}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -29,16 +29,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"",
-      "End_date.selectedDate",
-      "Start_date.selectedDate"
+      "Video_type.selectedOptionValue",
+      "moment().add(-4, 'day')",
+      "moment().add(-5, 'day')"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Facebook Copy_Total_anger_count",
+  "id": "Youtube Copy_Yesterday_data_view",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_62a9463f4c1f4b56d4d33cf0"
+  "gitSyncId": "62837f843cd70e097b62341a_62a98acf4c1f4b56d4d33d4e"
 }

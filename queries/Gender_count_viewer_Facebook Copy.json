@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(cast(female_13_17 as decimal) + cast(female_18_24 as decimal)+cast(female_25_34 as decimal)+cast(female_35_44 as decimal)+cast(female_45_54 as decimal)+cast(female_55_64 as decimal)+cast(female_65_plus as decimal)) as female_viewer,\nSUM(cast(male_13_17 as decimal) + cast(male_18_24 as decimal)+cast(male_25_34 as decimal)+cast(male_35_4 as decimal)+cast(male_45_54 as decimal)+cast(male_55_64 as decimal)+cast(male_65_plus as decimal)) as male_viewer,\nSUM(cast(undefined_13_17 as decimal) + cast(undefined_18_24 as decimal)+cast(undefined_25_34 as decimal)+cast(undefined_35_44 as decimal)+cast(undefined_45_54 as decimal)+cast(undefined_55_64 as decimal)+cast(undefined_65_plus as decimal)) as undefined_viewer\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\tAND created_time > '{{video_select.selectedOptionValue}}';"
+      "body": "SELECT SUM(cast(female_13_17 as decimal) + cast(female_18_24 as decimal)+cast(female_25_34 as decimal)+cast(female_35_44 as decimal)+cast(female_45_54 as decimal)+cast(female_55_64 as decimal)+cast(female_65_plus as decimal)) as female_viewer,\nSUM(cast(male_13_17 as decimal) + cast(male_18_24 as decimal)+cast(male_25_34 as decimal)+cast(male_35_4 as decimal)+cast(male_45_54 as decimal)+cast(male_55_64 as decimal)+cast(male_65_plus as decimal)) as male_viewer,\nSUM(cast(undefined_13_17 as decimal) + cast(undefined_18_24 as decimal)+cast(undefined_25_34 as decimal)+cast(undefined_35_44 as decimal)+cast(undefined_45_54 as decimal)+cast(undefined_55_64 as decimal)+cast(undefined_65_plus as decimal)) as undefined_viewer\nFROM public.\"smg_dmp_fb_video_dashboard_unq\" WHERE view_date > '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}};"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -31,8 +31,7 @@
     "jsonPathKeys": [
       "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"",
       "End_date.selectedDate",
-      "Start_date.selectedDate",
-      "video_select.selectedOptionValue"
+      "Start_date.selectedDate"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
