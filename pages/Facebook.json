@@ -2583,11 +2583,11 @@
                 },
                 "w1rkqu8jfz": {
                   "seriesName": "Female",
-                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.female_viewer } })}}"
+                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': moment(obj.timestamp).format(\"YYYY-MM-DD\"), 'y': obj.female_viewer } })}}"
                 },
                 "3kx29vogl9": {
                   "seriesName": "Undefined",
-                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': obj.timestamp, 'y': obj.undefined_viewer } })}}"
+                  "data": "{{Gender_count_viewer.data.map( (obj) =>{ return  {'x': moment(obj.timestamp).format(\"YYYY-MM-DD\"), 'y': obj.undefined_viewer } })}}"
                 }
               },
               "animateLoading": true,
@@ -3246,17 +3246,6 @@
           ],
           [
             {
-              "id": "Facebook_Gender_count_viewer",
-              "name": "Gender_count_viewer",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Facebook_Percentage_Watch_hrs_of_domain",
               "name": "Percentage_Watch_hrs_of_domain",
               "pluginType": "DB",
@@ -3289,6 +3278,17 @@
             }
           ],
           [
+            {
+              "id": "Facebook_Gender_count_viewer",
+              "name": "Gender_count_viewer",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Start_date.selectedDate",
+                "End_date.selectedDate",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Facebook_Running_view_domainwise_",
               "name": "Running_view_domainwise_",
