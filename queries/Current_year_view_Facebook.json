@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Date_trunc('year', view_date)\tAS timestamp, \nsum(cast(total_video_views as decimal)) as COUNT_currentyear\nFROM public.\"smg_dmp_fb_video_dashboard_unq_view\"\nwhere view_date >= '{{moment().format(\"YYYY-01-01\")}}':: date\n  \t\tAND view_date < '{{moment()}}':: date\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
+      "body": "SELECT Date_trunc('year', view_date)\tAS timestamp, \nsum(cast(total_video_views as decimal)) as COUNT_currentyear\nFROM public.\"smg_dmp_fb_video_dashboard_unq_view\"\nwhere view_date >= '{{moment().format(\"YYYY-01-01\")}}':: date\n  \t\tAND view_date < '{{moment()}}':: date\n\t\t\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -29,6 +29,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"",
       "moment()",
       "moment().format(\"YYYY-01-01\")"
     ],

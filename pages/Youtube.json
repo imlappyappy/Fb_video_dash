@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2220,
+          "bottomRow": 2390,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -960,7 +960,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{\nfunction formatB() {\n\tlet n = Total_watch_hrs.data[0][\"watch_time_hours\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n;\n\t}\n}()\n}}",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Total_watch_hrs.data[0][\"watch_time_hours\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
                       "key": "hyz8q616x8",
                       "rightColumn": 64,
                       "textAlign": "LEFT",
@@ -1266,7 +1266,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{\nfunction formatB() {\n\tlet n = Total_view_count.data[0][\"views\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n;\n\t}\n}()\n}}",
+                      "text": "{{\nfunction formatB() {\n\tlet n = Total_view_count.data[0][\"views\"]\n\tif (n > 999999999){\n\t\treturn (n / 1000000000).toFixed(2) + \"B\";\n\t}\n  else if(n > 999999){\n    return (n/1000000).toFixed(2) + \"M\";\n\t}\n\telse if(n > 999){\n    return (n/1000).toFixed(2) + \"K\";\n\t}\n\telse{\n\t\treturn n.toFixed(2);\n\t}\n}()\n}}",
                       "key": "hyz8q616x8",
                       "rightColumn": 64,
                       "textAlign": "LEFT",
@@ -1413,7 +1413,7 @@
                       "parentId": "9dhha23vqr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\tTable_view_trending.run();\n})() }}"
+                      "onOptionChange": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\tTable_view_trending.run();\n\tCurrent_month_data.run();\n\tPrev_month_data.run();\n\tLast_year_data.run();\n\tLast_year_month.run();\n\tDaily_change_data.run();\n\tYesterday_data_view.run();\n\tCurrent_year_data.run();\n})() }}"
                     },
                     {
                       "widgetName": "Text7Copy",
@@ -1626,7 +1626,7 @@
                       "parentId": "9dhha23vqr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\tTable_view_trending.run();\n})() }}"
+                      "onOptionChange": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\tTable_view_trending.run();\n\tCurrent_month_data.run();\n\tPrev_month_data.run();\n\tLast_year_data.run();\n\tLast_year_month.run();\n\tDaily_change_data.run();\n\tYesterday_data_view.run();\n\tCurrent_year_data.run();\n})() }}"
                     }
                   ],
                   "key": "95h8vvjla6"
@@ -1651,7 +1651,7 @@
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
               "topRow": 57,
-              "bottomRow": 87,
+              "bottomRow": 92,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1713,8 +1713,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 87,
-              "bottomRow": 119,
+              "topRow": 92,
+              "bottomRow": 127,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1729,34 +1729,13 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.8cdswa73jp.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n     \"showvalues\":\"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{Top_10_video_viewwise.data.map( (obj) =>{ return  {'label': obj.video_title, 'value': obj.views } })}}\n  }\n}",
               "key": "io874kgdgz",
               "rightColumn": 32,
               "widgetId": "17vu9sqz0e",
@@ -1767,9 +1746,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Top 10 video by view",
+              "chartName": "Top 10 videos by  view",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "setAdaptiveYMin": true,
@@ -1777,8 +1756,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 87,
-              "bottomRow": 119,
+              "topRow": 92,
+              "bottomRow": 127,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1793,34 +1772,13 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.8snrn6tztt.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 32,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"showValues\":\"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{Top_10_video_by_watch_hrs.data.map( (obj) =>{ return  {'label': obj.video_title, 'value': obj.watch_time_hours } })}}\n  }\n}",
               "key": "wx8vsxnsbt",
               "rightColumn": 64,
               "widgetId": "oakqiwq99g",
@@ -1833,15 +1791,15 @@
               "yAxisName": "",
               "chartName": "Top 10 video by watch hrs",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "widgetName": "video_channel",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 119,
-              "bottomRow": 156,
+              "topRow": 127,
+              "bottomRow": 164,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1882,8 +1840,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 119,
-              "bottomRow": 156,
+              "topRow": 127,
+              "bottomRow": 164,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1915,7 +1873,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Avg Watch Hrs Per Category",
+              "chartName": "Avg Watch Hrs",
               "xAxisName": "",
               "chartType": "CUSTOM_FUSION_CHART"
             },
@@ -1924,8 +1882,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 119,
-              "bottomRow": 156,
+              "topRow": 127,
+              "bottomRow": 164,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1957,7 +1915,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Avg Watch Hrs Per Channel",
+              "chartName": "Avg Watch Hrs",
               "xAxisName": "",
               "chartType": "CUSTOM_FUSION_CHART"
             },
@@ -1966,8 +1924,8 @@
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 156,
-              "bottomRow": 188,
+              "topRow": 164,
+              "bottomRow": 200,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -1982,34 +1940,13 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.e2sqnsfc35.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 32,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \"Categorywise\",\n\t\t\t\"showValues\": \"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\":    {{Total_Published_video_category.data.map( (obj) =>{ return  {'label': obj.category, 'value': obj.video_pub } })}}\n  }\n}",
               "key": "wx8vsxnsbt",
               "rightColumn": 64,
               "widgetId": "g96kzbgyf3",
@@ -2020,17 +1957,18 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total Video Published Categorywise",
+              "chartName": "Total Video Published ",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
+              "setAdaptiveYMin": false,
               "widgetName": "video_pub_channel",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 156,
-              "bottomRow": 188,
+              "topRow": 164,
+              "bottomRow": 200,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2045,34 +1983,13 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.8kd2plrydj.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \"Channelwise\",\n\t\t\t\"showValues\": \"1\",\n\t\t\t\"theme\": \"fusion\"\n    },\n    \"data\": {{Total_published_videos_channel.data.map( (obj) =>{ return  {'label': obj.channel_display_name, 'value': obj.video_pub_channel } })}}\n  }\n}",
               "key": "wx8vsxnsbt",
               "rightColumn": 32,
               "widgetId": "bzh4logzxl",
@@ -2083,17 +2000,17 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total Video Published Channelwise",
+              "chartName": "Total Video Published",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "widgetName": "total_view_cat",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 188,
-              "bottomRow": 220,
+              "topRow": 200,
+              "bottomRow": 237,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2108,34 +2025,13 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.hxzwlveuyx.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 32,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \"Categorywise\",\n      \"showValues\":\"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{total_view_categorywise.data.map( (obj) =>{ return  {'label': obj.category, 'value': obj.view_cat } })}}\n  }\n}",
               "key": "wx8vsxnsbt",
               "rightColumn": 64,
               "widgetId": "92jxggqv8o",
@@ -2146,17 +2042,17 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total View Categorywise",
+              "chartName": "Views Count ",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "widgetName": "total_view_channel",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 188,
-              "bottomRow": 220,
+              "topRow": 200,
+              "bottomRow": 237,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -2171,34 +2067,13 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.h43i879y26.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
               "leftColumn": 0,
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"subcaption\": \"Channelwise\",\n      \"showValues\":\"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\":{{Total_views_channelwise.data.map( (obj) =>{ return  {'label': obj.channel_display_name, 'value': obj.views_channel } })}}\n  }\n}",
               "key": "wx8vsxnsbt",
               "rightColumn": 32,
               "widgetId": "y5s2tlgkle",
@@ -2209,9 +2084,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "chartName": "Total View Channelwise",
+              "chartName": "Views Count",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "boxShadow": "VARIANT2",
@@ -2806,7 +2681,9 @@
               "name": "Current_month_data",
               "pluginType": "DB",
               "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "moment()",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
                 "moment().format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 10000
@@ -2816,8 +2693,10 @@
               "name": "Current_year_data",
               "pluginType": "DB",
               "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "moment().format(\"YYYY-01-01\")",
-                "moment()"
+                "moment()",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -2826,7 +2705,9 @@
               "name": "Daily_change_data",
               "pluginType": "DB",
               "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "moment().add(-3, 'day')",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
                 "moment().add(-4, 'day')"
               ],
               "timeoutInMillisecond": 10000
@@ -2837,7 +2718,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'year').format(\"YYYY-12-31\")"
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "moment().add(-1, 'year').format(\"YYYY-12-31\")",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -2847,6 +2730,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-MM-01\")",
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
                 "moment().add(-1, 'year').format(\"YYYY-MM-31\")"
               ],
               "timeoutInMillisecond": 10000
@@ -2866,7 +2751,9 @@
               "name": "Table_view_trending",
               "pluginType": "DB",
               "jsonPathKeys": [
+                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "moment()",
+                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
                 "moment().format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 10000
@@ -2938,8 +2825,7 @@
               "jsonPathKeys": [
                 "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 15000
             },
@@ -2948,7 +2834,6 @@
               "name": "trending_channels",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
@@ -2962,7 +2847,6 @@
               "name": "Percentage_of_video_on_channel",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
@@ -3000,8 +2884,7 @@
               "jsonPathKeys": [
                 "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 20000
             },
@@ -3010,7 +2893,6 @@
               "name": "Total_published_videos_channel",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
@@ -3022,7 +2904,6 @@
               "name": "Total_views_channelwise",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
@@ -3036,8 +2917,7 @@
               "jsonPathKeys": [
                 "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 15000
             },
@@ -3046,7 +2926,6 @@
               "name": "percentage_watch_channelwise",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
@@ -3060,8 +2939,7 @@
               "jsonPathKeys": [
                 "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 15000
             }

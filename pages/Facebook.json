@@ -1972,33 +1972,12 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.msiwvfftl6.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n     \"showValues\":\"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\":{{Top_trending_domain.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.total_video_view} } )}}\n  }\n}",
               "key": "l9chif9dur",
               "rightColumn": 64,
               "widgetId": "fciqm5r4nu",
@@ -2011,7 +1990,7 @@
               "yAxisName": "",
               "chartName": "Top 10 Domain by view",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "boxShadow": "VARIANT2",
@@ -2263,7 +2242,7 @@
                       "parentId": "n62vtnc9sj",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n})() }}"
+                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tTable_view_trending.run();\n\tToday_view_data.run();\n\tYesterday_view_data.run();\n\tCurrent_month_Data.run();\n\tPrev_month_data.run();\n\tCurrent_year_view.run();\n\tLast_Year_view.run();\n\tLast_year_month.run();\n})() }}"
                     }
                   ],
                   "key": "95h8vvjla6"
@@ -2305,33 +2284,12 @@
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.msiwvfftl6.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
                 }
               ],
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"showValues\":\"1\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{Top_viewed_videos.data.map( (obj) =>{ return  {'label': obj.title, 'value': obj.total_video_view} } )}}\n  }\n}",
               "key": "l9chif9dur",
               "rightColumn": 32,
               "widgetId": "f8w9rj4311",
@@ -2344,7 +2302,7 @@
               "yAxisName": "",
               "chartName": "Top 10 Videos by view",
               "xAxisName": "",
-              "chartType": "COLUMN_CHART"
+              "chartType": "CUSTOM_FUSION_CHART"
             },
             {
               "setAdaptiveYMin": true,
@@ -3093,7 +3051,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment()",
-                "moment().format(\"YYYY-MM-01\")"
+                "moment().format(\"YYYY-MM-01\")",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3103,7 +3062,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().format(\"YYYY-01-01\")",
-                "moment()"
+                "moment()",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3113,7 +3073,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-12-31\")",
-                "moment().add(-1, 'year').format(\"YYYY-01-01\")"
+                "moment().add(-1, 'year').format(\"YYYY-01-01\")",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3123,7 +3084,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'year').format(\"YYYY-MM-31\")"
+                "moment().add(-1, 'year').format(\"YYYY-MM-31\")",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3133,7 +3095,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1, 'month').format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'month').format(\"YYYY-MM-31\")"
+                "moment().add(-1, 'month').format(\"YYYY-MM-31\")",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3154,7 +3117,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment()",
-                "moment().format(\"YYYY-MM-01\")"
+                "moment().format(\"YYYY-MM-01\")",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 20000
             },
@@ -3164,7 +3128,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment()",
-                "moment().add(-1, 'day')"
+                "moment().add(-1, 'day')",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3262,7 +3227,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-3, 'day')",
-                "moment().add(-2, 'day')"
+                "moment().add(-2, 'day')",
+                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3296,8 +3262,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -3307,8 +3272,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 15000
             },
