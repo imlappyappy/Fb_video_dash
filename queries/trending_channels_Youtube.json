@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT channel_display_name AS channel_display_name,\n       sum(views) AS views_trend\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date > '{{Start_date.selectedDate}}':: date\n  AND date < '{{End_date.selectedDate}}':: date \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY channel_display_name\nORDER BY views_trend DESC\nLIMIT 1;"
+      "body": "SELECT channel_display_name AS channel_display_name,\n       sum(views) AS views_trend\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date >= '{{Start_date.selectedDate}}':: date\n  AND date <= '{{End_date.selectedDate}}':: date \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY channel_display_name\nORDER BY views_trend DESC\nLIMIT 1;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
