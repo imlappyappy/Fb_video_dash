@@ -391,7 +391,7 @@
                               "dynamicBindingPathList": [],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "New Videos Watch Hrs",
+                              "text": "New Churn Watch Hrs",
                               "key": "dsveqr32ld",
                               "rightColumn": 19,
                               "textAlign": "LEFT",
@@ -2146,7 +2146,7 @@
                               "borderWidth": "0",
                               "key": "h35a7d6snx",
                               "backgroundColor": "#FFFFFF",
-                              "rightColumn": 63,
+                              "rightColumn": 64,
                               "widgetId": "6wlb0egtbq",
                               "containerStyle": "card",
                               "isVisible": true,
@@ -2234,7 +2234,9 @@
                   "shouldScrollContents": false,
                   "minHeight": 400,
                   "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
                   "leftColumn": 0,
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "tabId": "",
@@ -5323,7 +5325,7 @@
                   ],
                   "isDisabled": false,
                   "key": "47hhprmp23",
-                  "tabName": "Tab 2",
+                  "tabName": "Date_filter",
                   "rightColumn": 250.5,
                   "detachFromLayout": true,
                   "widgetId": "c5pxayyexd",
@@ -5348,7 +5350,7 @@
                   "index": 0
                 },
                 "tab2": {
-                  "label": "Datefilter",
+                  "label": "Date_filter",
                   "id": "tab2",
                   "widgetId": "c5pxayyexd",
                   "isVisible": true,
