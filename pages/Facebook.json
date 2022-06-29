@@ -5438,7 +5438,7 @@
               "name": "Last_Year_view",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'year').format(\"YYYY-12-31\")",
+                "moment().add(-1, 'year').format(\"YYYY-MM-DD\")",
                 "moment().add(-1, 'year').format(\"YYYY-01-01\")",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5527,8 +5527,8 @@
               "name": "Prev_month_data",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'month').format(\"YYYY-MM-DD\")",
                 "moment().add(-1, 'month').format(\"YYYY-MM-01\")",
+                "moment().add(-1, 'month').format(\"YYYY-MM-31\")",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
