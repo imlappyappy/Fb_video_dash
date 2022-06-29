@@ -1020,6 +1020,7 @@
                           "leftColumn": 0,
                           "children": [
                             {
+                              "multiRowSelection": false,
                               "widgetName": "MTD_vs_All_videos_view_tbl",
                               "defaultPageSize": 0,
                               "columnOrder": [
@@ -1031,6 +1032,7 @@
                               ],
                               "isVisibleDownload": true,
                               "dynamicPropertyPathList": [],
+                              "compactMode": "DEFAULT",
                               "displayName": "Table",
                               "iconSVG": "/static/media/icon.db8a9cbd.svg",
                               "topRow": 4,
