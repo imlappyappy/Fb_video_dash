@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select title,name,\ncreated_time,\nSUM(cast(total_video_views as decimal)) as Total_Video_Views,\n(SUM(cast(total_video_view_total_time as decimal))/(3600*1000)) as Total_Watch_Hrs,\nSUM(cast(total_video_impressions as decimal)/1000) as Revenue\nFROM public.smg_dmp_fb_video_dashboard_unq_view\nwhere view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\t\t\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\t\t\tand name is not null\ngroup by title,name,created_time\norder by Total_Video_Views desc\nlimit 100"
+      "body": "select title,name,\ncreated_time,\nSUM(cast(total_video_views as decimal)) as Total_Video_Views,\nROUND((SUM(cast(total_video_view_total_time as decimal))/(3600*1000)),2) as Total_Watch_Hrs,\nSUM(cast(total_video_impressions as decimal)/1000) as Revenue\nFROM public.smg_dmp_fb_video_dashboard_unq_view\nwhere view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\t\t\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\t\t\tand name is not null\ngroup by title,name,created_time\norder by Total_Video_Views desc\nlimit 100"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
