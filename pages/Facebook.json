@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1298,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -196,9 +196,10 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "channel",
+                                "cnt",
                                 "mtd",
-                                "mtd_last_month",
-                                "mtd_last_year",
+                                "vs_last_month",
+                                "vs_last_year",
                                 "customColumn1"
                               ],
                               "isVisibleDownload": true,
@@ -224,19 +225,22 @@
                                   "key": "primaryColumns.channel.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.mtd.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_month.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_year.computedValue"
-                                },
-                                {
                                   "key": "derivedColumns.customColumn1.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.customColumn1.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_month.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_year.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.mtd.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.cnt.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -258,57 +262,6 @@
                                   "label": "Channel",
                                   "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
                                 },
-                                "mtd": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "mtd",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "MTD",
-                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
-                                },
-                                "mtd_last_month": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "mtd_last_month",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Month",
-                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_month))}}"
-                                },
-                                "mtd_last_year": {
-                                  "index": 3,
-                                  "width": 150,
-                                  "id": "mtd_last_year",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Year",
-                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_year))}}"
-                                },
                                 "customColumn1": {
                                   "index": 4,
                                   "width": 150,
@@ -328,6 +281,74 @@
                                   "menuColor": "#03B365",
                                   "labelColor": "#FFFFFF",
                                   "textSize": "PARAGRAPH2"
+                                },
+                                "vs_last_month": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "vs_last_month",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Month",
+                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month))}}"
+                                },
+                                "vs_last_year": {
+                                  "index": 3,
+                                  "width": 150,
+                                  "id": "vs_last_year",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Year",
+                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
+                                },
+                                "mtd": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "mtd",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "MTD",
+                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
+                                },
+                                "cnt": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "cnt",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Count",
+                                  "computedValue": "{{MTD_vs_new_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.cnt))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -477,8 +498,8 @@
                               "columnOrder": [
                                 "channel",
                                 "mtd",
-                                "mtd_last_month",
-                                "mtd_last_year",
+                                "vs_last_month",
+                                "vs_last_year",
                                 "customColumn1"
                               ],
                               "isVisibleDownload": true,
@@ -504,19 +525,19 @@
                                   "key": "primaryColumns.channel.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.mtd.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_month.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_year.computedValue"
-                                },
-                                {
                                   "key": "derivedColumns.customColumn1.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.customColumn1.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_month.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_year.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.mtd.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -538,57 +559,6 @@
                                   "label": "Channel",
                                   "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
                                 },
-                                "mtd": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "mtd",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "MTD",
-                                  "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
-                                },
-                                "mtd_last_month": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "mtd_last_month",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Month",
-                                  "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_month))}}"
-                                },
-                                "mtd_last_year": {
-                                  "index": 3,
-                                  "width": 150,
-                                  "id": "mtd_last_year",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Year",
-                                  "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_year))}}"
-                                },
                                 "customColumn1": {
                                   "index": 4,
                                   "width": 150,
@@ -608,6 +578,57 @@
                                   "menuColor": "#03B365",
                                   "labelColor": "#FFFFFF",
                                   "textSize": "PARAGRAPH2"
+                                },
+                                "vs_last_month": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "vs_last_month",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Month",
+                                  "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month+'%'))}}"
+                                },
+                                "vs_last_year": {
+                                  "index": 3,
+                                  "width": 150,
+                                  "id": "vs_last_year",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Year",
+                                  "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
+                                },
+                                "mtd": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "mtd",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "MTD",
+                                  "computedValue": "{{MTD_vs_All_watchhrs_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -756,9 +777,10 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "channel",
+                                "cnt",
                                 "mtd",
-                                "mtd_last_month",
-                                "mtd_last_year",
+                                "vs_last_month",
+                                "vs_last_year",
                                 "customColumn1"
                               ],
                               "isVisibleDownload": true,
@@ -784,19 +806,22 @@
                                   "key": "primaryColumns.channel.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.mtd.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_month.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_year.computedValue"
-                                },
-                                {
                                   "key": "derivedColumns.customColumn1.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.customColumn1.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_month.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_year.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.mtd.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.cnt.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -818,57 +843,6 @@
                                   "label": "Channel",
                                   "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
                                 },
-                                "mtd": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "mtd",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "MTD",
-                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
-                                },
-                                "mtd_last_month": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "mtd_last_month",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Month",
-                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_month))}}"
-                                },
-                                "mtd_last_year": {
-                                  "index": 3,
-                                  "width": 150,
-                                  "id": "mtd_last_year",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Year",
-                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_year))}}"
-                                },
                                 "customColumn1": {
                                   "index": 4,
                                   "width": 150,
@@ -888,6 +862,74 @@
                                   "menuColor": "#03B365",
                                   "labelColor": "#FFFFFF",
                                   "textSize": "PARAGRAPH2"
+                                },
+                                "vs_last_month": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "vs_last_month",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Month",
+                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month + \"%\"))}}"
+                                },
+                                "vs_last_year": {
+                                  "index": 3,
+                                  "width": 150,
+                                  "id": "vs_last_year",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Year",
+                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
+                                },
+                                "mtd": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "mtd",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "MTD",
+                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
+                                },
+                                "cnt": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "cnt",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Count",
+                                  "computedValue": "{{MTD_vs_New_videos_views_tbl.sanitizedTableData.map((currentRow) => ( currentRow.cnt))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -926,6 +968,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "0g81f2tj3u",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -1036,9 +1079,9 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "channel",
-                                "mtd",
-                                "mtd_last_month",
-                                "mtd_last_year",
+                                "sum",
+                                "vs_last_month",
+                                "vs_last_year",
                                 "customColumn1"
                               ],
                               "isVisibleDownload": true,
@@ -1064,19 +1107,19 @@
                                   "key": "primaryColumns.channel.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.mtd.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_month.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mtd_last_year.computedValue"
-                                },
-                                {
                                   "key": "derivedColumns.customColumn1.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.customColumn1.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_month.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.vs_last_year.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.sum.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -1098,57 +1141,6 @@
                                   "label": "Channel",
                                   "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
                                 },
-                                "mtd": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "mtd",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "MTD",
-                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd))}}"
-                                },
-                                "mtd_last_month": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "mtd_last_month",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Month",
-                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_month))}}"
-                                },
-                                "mtd_last_year": {
-                                  "index": 3,
-                                  "width": 150,
-                                  "id": "mtd_last_year",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "vs Last Year",
-                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.mtd_last_year))}}"
-                                },
                                 "customColumn1": {
                                   "index": 4,
                                   "width": 150,
@@ -1161,13 +1153,64 @@
                                   "isCellVisible": true,
                                   "isDerived": true,
                                   "label": "Contribution",
-                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( Number((\n(\n\t(currentRow.mtd)/\n(_.sumBy(MTD_vs_All_videos_view_tbl.tableData, (row) =>\nrow.mtd)/2)\n\t)*100).toFixed(2))+\"%\"\n))}}",
+                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( Number((\n(\n\t(currentRow.sum)/\n(_.sumBy(MTD_vs_All_videos_view_tbl.tableData, (row) =>\nrow.sum)/2)\n\t)*100).toFixed(2))+\"%\"\n))}}",
                                   "buttonStyle": "rgb(3, 179, 101)",
                                   "buttonLabelColor": "#FFFFFF",
                                   "buttonColor": "#03B365",
                                   "menuColor": "#03B365",
                                   "labelColor": "#FFFFFF",
                                   "textSize": "PARAGRAPH2"
+                                },
+                                "vs_last_month": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "vs_last_month",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Month",
+                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month + \"%\"))}}"
+                                },
+                                "vs_last_year": {
+                                  "index": 3,
+                                  "width": 150,
+                                  "id": "vs_last_year",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "vs Last Year",
+                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
+                                },
+                                "sum": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "sum",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "MTD",
+                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( currentRow.sum))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -1185,7 +1228,7 @@
                                   "isCellVisible": true,
                                   "isDerived": true,
                                   "label": "Contribution",
-                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( Number((\n(\n\t(currentRow.mtd)/\n(_.sumBy(MTD_vs_All_videos_view_tbl.tableData, (row) =>\nrow.mtd)/2)\n\t)*100).toFixed(2))+\"%\"\n))}}",
+                                  "computedValue": "{{MTD_vs_All_videos_view_tbl.sanitizedTableData.map((currentRow) => ( Number((\n(\n\t(currentRow.sum)/\n(_.sumBy(MTD_vs_All_videos_view_tbl.tableData, (row) =>\nrow.sum)/2)\n\t)*100).toFixed(2))+\"%\"\n))}}",
                                   "buttonStyle": "rgb(3, 179, 101)",
                                   "buttonLabelColor": "#FFFFFF",
                                   "buttonColor": "#03B365",
@@ -1206,11 +1249,12 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "f44hhxnijj",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
-                              "isVisiblePagination": true,
+                              "isVisiblePagination": false,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
                                 "task": 245,
@@ -2303,7 +2347,8 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "channel",
-                                "month",
+                                "months",
+                                "cnt",
                                 "views",
                                 "watch_hrs",
                                 "revenue"
@@ -2331,9 +2376,6 @@
                                   "key": "primaryColumns.channel.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.month.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.views.computedValue"
                                 },
                                 {
@@ -2341,6 +2383,12 @@
                                 },
                                 {
                                   "key": "primaryColumns.revenue.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.months.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.cnt.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -2361,23 +2409,6 @@
                                   "isDerived": false,
                                   "label": "Channel",
                                   "computedValue": "{{Table4.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
-                                },
-                                "month": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "month",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Month",
-                                  "computedValue": "{{Table4.sanitizedTableData.map((currentRow) => ( currentRow.month))}}"
                                 },
                                 "views": {
                                   "index": 2,
@@ -2429,6 +2460,40 @@
                                   "isDerived": false,
                                   "label": "Revenue",
                                   "computedValue": "{{Table4.sanitizedTableData.map((currentRow) => ( currentRow.revenue))}}"
+                                },
+                                "months": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "months",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Months",
+                                  "computedValue": "{{Table4.sanitizedTableData.map((currentRow) => ( currentRow.months))}}"
+                                },
+                                "cnt": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "cnt",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Count",
+                                  "computedValue": "{{Table4.sanitizedTableData.map((currentRow) => ( currentRow.cnt))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -2446,6 +2511,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "50t8eb69va",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -2555,7 +2621,7 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "channel",
-                                "month",
+                                "months",
                                 "views",
                                 "watch_hrs",
                                 "revenue"
@@ -2586,13 +2652,13 @@
                                   "key": "primaryColumns.channel.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.month.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.views.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.watch_hrs.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.months.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -2631,23 +2697,6 @@
                                   "label": "Channel",
                                   "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
                                 },
-                                "month": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "month",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Month",
-                                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.month))}}"
-                                },
                                 "views": {
                                   "index": 2,
                                   "width": 150,
@@ -2681,6 +2730,23 @@
                                   "isDerived": false,
                                   "label": "Watch Hrs",
                                   "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.watch_hrs))}}"
+                                },
+                                "months": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "months",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Months",
+                                  "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.months))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -2698,6 +2764,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "1wmow26774",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -2806,9 +2873,9 @@
                               "widgetName": "Table2",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "title",
-                                "name",
-                                "created_time",
+                                "v_title",
+                                "channel",
+                                "time_published",
                                 "total_video_views",
                                 "total_watch_hrs",
                                 "revenue"
@@ -2833,15 +2900,6 @@
                                   "key": "tableData"
                                 },
                                 {
-                                  "key": "primaryColumns.title.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.name.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.created_time.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.total_video_views.computedValue"
                                 },
                                 {
@@ -2849,61 +2907,19 @@
                                 },
                                 {
                                   "key": "primaryColumns.revenue.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.v_title.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.channel.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.time_published.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
                               "primaryColumns": {
-                                "title": {
-                                  "index": 0,
-                                  "width": 150,
-                                  "id": "title",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Title",
-                                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
-                                },
-                                "name": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "name",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Channel",
-                                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
-                                },
-                                "created_time": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "created_time",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "date",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Time Published",
-                                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.created_time))}}"
-                                },
                                 "total_video_views": {
                                   "index": 3,
                                   "width": 150,
@@ -2954,6 +2970,57 @@
                                   "isDerived": false,
                                   "label": "Revenue",
                                   "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.revenue))}}"
+                                },
+                                "v_title": {
+                                  "index": 0,
+                                  "width": 150,
+                                  "id": "v_title",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Title",
+                                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.v_title))}}"
+                                },
+                                "channel": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "channel",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Channel",
+                                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
+                                },
+                                "time_published": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "time_published",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Time Published",
+                                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.time_published))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -2971,6 +3038,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "3sh3ur1ey3",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -2981,7 +3049,8 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "title": 435
+                                "title": 435,
+                                "v_title": 174
                               }
                             },
                             {
@@ -3080,9 +3149,9 @@
                               "widgetName": "Table1",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "title",
-                                "name",
-                                "created_time",
+                                "v_title",
+                                "channel",
+                                "time_published",
                                 "total_video_views",
                                 "total_watch_hrs",
                                 "revenue"
@@ -3111,15 +3180,6 @@
                                   "key": "tableData"
                                 },
                                 {
-                                  "key": "primaryColumns.title.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.name.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.created_time.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.total_video_views.computedValue"
                                 },
                                 {
@@ -3127,61 +3187,19 @@
                                 },
                                 {
                                   "key": "primaryColumns.revenue.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.v_title.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.channel.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.time_published.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
                               "primaryColumns": {
-                                "title": {
-                                  "index": 0,
-                                  "width": 150,
-                                  "id": "title",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Title",
-                                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
-                                },
-                                "name": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "name",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Channel",
-                                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
-                                },
-                                "created_time": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "created_time",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "date",
-                                  "textSize": "PARAGRAPH2",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Time Published",
-                                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.created_time))}}"
-                                },
                                 "total_video_views": {
                                   "index": 3,
                                   "width": 150,
@@ -3232,6 +3250,57 @@
                                   "isDerived": false,
                                   "label": "Revenue",
                                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.revenue))}}"
+                                },
+                                "v_title": {
+                                  "index": 0,
+                                  "width": 150,
+                                  "id": "v_title",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Title",
+                                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.v_title))}}"
+                                },
+                                "channel": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "channel",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Channel",
+                                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.channel))}}"
+                                },
+                                "time_published": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "time_published",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH2",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Time Published",
+                                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.time_published))}}"
                                 }
                               },
                               "delimiter": ",",
@@ -3249,6 +3318,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "yde2edbhwh",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -3545,7 +3615,7 @@
                                       "key": "6f5u04yw78",
                                       "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
                                       "isRequired": false,
-                                      "defaultDate": "{{new Date()}}",
+                                      "defaultDate": "{{\nfunction endDAte() {\n    var d = new Date();\n    return new Date(d.setDate(d.getDate() - 1))\n}()\n}}",
                                       "rightColumn": 64,
                                       "widgetId": "i5dz1brhbe",
                                       "isVisible": true,
@@ -5446,9 +5516,7 @@
               "name": "Last_year_month",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'year').format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'year').format(\"YYYY-MM-31\")",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+                "moment().add(-1,'year').format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -5458,7 +5526,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment()",
+                "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
@@ -5472,7 +5540,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment()",
+                "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
@@ -5486,7 +5554,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment()",
+                "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
@@ -5501,6 +5569,7 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment()",
+                "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
@@ -5524,9 +5593,7 @@
               "name": "Prev_month_data",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'month').format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'month').format(\"YYYY-MM-31\")",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+                "moment().add(-1,'month').format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 10000
             },

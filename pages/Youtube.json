@@ -1216,7 +1216,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": true,
-                                  "label": "contribution",
+                                  "label": "Contribution",
                                   "computedValue": "{{MTD_vs_New_watch_tbl.sanitizedTableData.map((currentRow) => ( (\n(\n\t(currentRow.mtd)/\n(_.sumBy(MTD_vs_New_watch_tbl.tableData, (row) =>\nrow.mtd)/2)\n\t)*100).toFixed(2)+\"%\"\n))}}",
                                   "buttonStyle": "rgb(3, 179, 101)",
                                   "buttonLabelColor": "#FFFFFF",
@@ -1258,7 +1258,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_month",
+                                  "label": "vs Last Month",
                                   "computedValue": "{{MTD_vs_New_watch_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month))}}"
                                 },
                                 "vs_last_year": {
@@ -1275,7 +1275,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_year",
+                                  "label": "vs Last Year",
                                   "computedValue": "{{MTD_vs_New_watch_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
                                 }
                               },
@@ -1293,7 +1293,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": true,
-                                  "label": "contribution",
+                                  "label": "Contribution",
                                   "computedValue": "{{MTD_vs_New_watch_tbl.sanitizedTableData.map((currentRow) => ( (\n(\n\t(currentRow.mtd)/\n(_.sumBy(MTD_vs_New_watch_tbl.tableData, (row) =>\nrow.mtd)/2)\n\t)*100).toFixed(2)+\"%\"\n))}}",
                                   "buttonStyle": "rgb(3, 179, 101)",
                                   "buttonLabelColor": "#FFFFFF",
@@ -1317,6 +1317,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "yr85cln5pf",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -1546,7 +1547,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_month",
+                                  "label": "vs Last Month",
                                   "computedValue": "{{MTD_vs_ALL_watch_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month))}}"
                                 },
                                 "vs_last_year": {
@@ -1563,7 +1564,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_year",
+                                  "label": "vs Last Year",
                                   "computedValue": "{{MTD_vs_ALL_watch_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
                                 }
                               },
@@ -1605,6 +1606,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "a0tlfzmy04",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -1854,7 +1856,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_month",
+                                  "label": "vs Last Month",
                                   "computedValue": "{{MTD_vs_new_video_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month))}}"
                                 },
                                 "vs_last_year": {
@@ -1871,7 +1873,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_year",
+                                  "label": "vs Last Year",
                                   "computedValue": "{{MTD_vs_new_video_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
                                 }
                               },
@@ -1913,6 +1915,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "krwpcvuq62",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -2146,7 +2149,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_month",
+                                  "label": "vs Last Month",
                                   "computedValue": "{{MTD_vs_All_videos_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_month))}}"
                                 },
                                 "vs_last_year": {
@@ -2164,7 +2167,7 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "vs_last_year",
+                                  "label": "vs Last Year",
                                   "computedValue": "{{MTD_vs_All_videos_tbl.sanitizedTableData.map((currentRow) => ( currentRow.vs_last_year))}}"
                                 }
                               },
@@ -2208,6 +2211,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "cxf8iy7air",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
@@ -3860,11 +3864,12 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "duarwkdkle",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
-                              "isVisiblePagination": true,
+                              "isVisiblePagination": false,
                               "primaryColumnId": "channel_display_name",
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
@@ -4139,11 +4144,12 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "0f6c70kh4w",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
-                              "isVisiblePagination": true,
+                              "isVisiblePagination": false,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
                                 "task": 245,
@@ -4392,11 +4398,12 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "q6z6ujcx6n",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
-                              "isVisiblePagination": true,
+                              "isVisiblePagination": false,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
                                 "task": 245,
@@ -4668,11 +4675,12 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "npt3tg8h8g",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
-                              "isVisiblePagination": true,
+                              "isVisiblePagination": false,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
                                 "task": 245,
@@ -5240,7 +5248,6 @@
               "jsonPathKeys": [
                 "moment().add(-1, 'year').format(\"YYYY-MM-01\")",
                 "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
-                "moment().add(-1, 'year').format(\"YYYY-MM-DD\")",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 10000
@@ -5318,7 +5325,6 @@
               "name": "Prev_month_data",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1,'month').format(\"YYYY-MM-31\")",
                 "moment().add(-1,'month').format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 10000
