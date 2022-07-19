@@ -5555,10 +5555,10 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")",
+                "moment().format(\"YYYY-MM-01 00:00:00\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")"
+                "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD 23:59:59\")"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -5569,6 +5569,7 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD HH:mm:ss\")",
                 "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
