@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT title as title,\n      SUM(cast(total_video_view_total_time as decimal)) as Total_video_view\nFROM public.\"smg_dmp_fb_video_dashboard_unq\"\nWHERE length(title) > 0  AND view_date >= '{{Start_date.selectedDate}}':: date\n  AND view_date < '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\tand name is not null\nGROUP BY title\nORDER BY Total_video_view DESC\nLIMIT 10;"
+      "body": "with CTE_sumtotal as (\n\tSELECT title,video_id,\n\tcast(total_video_view_total_time as decimal) as total_video_views\n\tFROM public.smg_dmp_fb_video_dashboard_unq_view \n\tWHERE view_date = '{{End_date.selectedDate}}':: date\nAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}),\nCTE_view_date as (\n\tSELECT title,video_id,\n\tcast(total_video_view_total_time as decimal) as total_video_views\n\tFROM public.smg_dmp_fb_video_dashboard_unq_view \n\tWHERE view_date = '{{Start_date.selectedDate}}':: date\nAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}})\nselect CTE_sumtotal.title,\nsum(CTE_sumtotal.Total_Video_Views-coalesce(CTE_view_date.Total_Video_Views,0)) as total_video_view \nfrom CTE_sumtotal full join CTE_view_date on CTE_sumtotal.video_id=CTE_view_date.video_id\nwhere length(CTE_sumtotal.title) > 0\ngroup by CTE_sumtotal.title\norder by total_video_view desc\nlimit 10;"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

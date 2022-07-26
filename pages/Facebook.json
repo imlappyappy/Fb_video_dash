@@ -3038,7 +3038,7 @@
                               "version": 3,
                               "totalRecordsCount": 0,
                               "parentId": "3sh3ur1ey3",
-                              "serverSidePaginationEnabled": false,
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
