@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 680,
+          "rightColumn": 1298,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -396,7 +396,10 @@
                               "columnSizeMap": {
                                 "task": 245,
                                 "step": 62,
-                                "status": 75
+                                "status": 75,
+                                "mtd": 182,
+                                "mtd_lastmonth_perc": 217,
+                                "mtd_lastyear_perc": 232
                               }
                             },
                             {
@@ -677,7 +680,11 @@
                               "columnSizeMap": {
                                 "task": 245,
                                 "step": 62,
-                                "status": 75
+                                "status": 75,
+                                "channel": 303,
+                                "mtd": 183,
+                                "mtd_lastmonth_perc": 219,
+                                "mtd_lastyear_perc": 230
                               }
                             },
                             {
@@ -978,7 +985,12 @@
                               "columnSizeMap": {
                                 "task": 245,
                                 "step": 62,
-                                "status": 75
+                                "status": 75,
+                                "channel": 182,
+                                "cnt": 110,
+                                "mtd": 186,
+                                "mtd_lastmonth_perc": 218,
+                                "mtd_lastyear_perc": 230
                               }
                             },
                             {
@@ -1262,7 +1274,11 @@
                                 "status": 75,
                                 "domain": 191,
                                 "total_video_views": 181,
-                                "current_month_views": 177
+                                "current_month_views": 177,
+                                "channel": 289,
+                                "mtd": 199,
+                                "mtd_lastmonth_perc": 219,
+                                "mtd_lastyear_perc": 228
                               }
                             },
                             {
@@ -2285,7 +2301,7 @@
                   "widgetName": "Canvas18",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 2590,
+                  "bottomRow": 2270,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -3050,7 +3066,7 @@
                                 "step": 62,
                                 "status": 75,
                                 "title": 435,
-                                "v_title": 174
+                                "v_title": 281
                               }
                             },
                             {
@@ -3330,7 +3346,8 @@
                                 "step": 62,
                                 "status": 75,
                                 "title": 401,
-                                "channel": 155
+                                "channel": 155,
+                                "v_title": 268
                               }
                             },
                             {
@@ -5241,55 +5258,12 @@
                       "borderRadius": "0"
                     },
                     {
-                      "setAdaptiveYMin": false,
-                      "widgetName": "Chart7",
+                      "widgetName": "Chart1",
                       "allowScroll": false,
                       "displayName": "Chart",
                       "iconSVG": "/static/media/icon.6adbe31e.svg",
                       "topRow": 158,
                       "bottomRow": 190,
-                      "parentRowSpace": 10,
-                      "type": "CHART_WIDGET",
-                      "hideCard": false,
-                      "chartData": {
-                        "jny34wnpp0": {
-                          "seriesName": "",
-                          "data": "{{Running_view_domainwise_.data.map( (obj) =>{ return  {'x': moment(obj.timestamp).format(\"YYYY-MM-DD\"),'y': obj.total_video_view } })}}"
-                        }
-                      },
-                      "animateLoading": true,
-                      "dynamicTriggerPathList": [],
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "chartData.jny34wnpp0.data"
-                        },
-                        {
-                          "key": "customFusionChartConfig"
-                        }
-                      ],
-                      "leftColumn": 0,
-                      "customFusionChartConfig": "{\n  \"type\": \"line\",\n  \"dataSource\": {\n    \"chart\": {\n      \"theme\": \"fusion\"\n    },\n    \"data\": {{Running_view_domainwise_.data.map( (obj) =>{ return  {'label': moment(obj.timestamp).format(\"YYYY-MM-DD\"),'value': obj.difference_previous_day } })}}\n  }\n}",
-                      "key": "io874kgdgz",
-                      "rightColumn": 64,
-                      "widgetId": "taiwp9x8h0",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "c5pxayyexd",
-                      "labelOrientation": "slant",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "yAxisName": "",
-                      "chartName": "Video Views Trend",
-                      "xAxisName": "",
-                      "chartType": "CUSTOM_FUSION_CHART"
-                    },
-                    {
-                      "widgetName": "Chart1",
-                      "allowScroll": false,
-                      "displayName": "Chart",
-                      "iconSVG": "/static/media/icon.6adbe31e.svg",
-                      "topRow": 190,
-                      "bottomRow": 222,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -5331,8 +5305,8 @@
                       "allowScroll": false,
                       "displayName": "Chart",
                       "iconSVG": "/static/media/icon.6adbe31e.svg",
-                      "topRow": 190,
-                      "bottomRow": 222,
+                      "topRow": 158,
+                      "bottomRow": 190,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -5376,8 +5350,8 @@
                       "dynamicPropertyPathList": [],
                       "displayName": "Chart",
                       "iconSVG": "/static/media/icon.6adbe31e.svg",
-                      "topRow": 222,
-                      "bottomRow": 257,
+                      "topRow": 190,
+                      "bottomRow": 225,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -5780,19 +5754,6 @@
               ],
               "timeoutInMillisecond": 15000
             }
-          ],
-          [
-            {
-              "id": "Facebook_Running_view_domainwise_",
-              "name": "Running_view_domainwise_",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 20000
-            }
           ]
         ],
         "widgetNames": [
@@ -5826,7 +5787,6 @@
           "Chart1",
           "Chart2",
           "Chart3",
-          "Chart7",
           "Container10",
           "Container11",
           "Container12",
