@@ -5770,7 +5770,7 @@
                 "moment().add(-1,'day')",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 10000
             },
             {
               "id": "Facebook_Top_viewed_videos",
