@@ -5448,6 +5448,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5459,6 +5461,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5470,6 +5474,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5557,6 +5563,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5577,6 +5584,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5588,6 +5597,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5599,6 +5610,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5610,6 +5623,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5621,6 +5636,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5632,6 +5649,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5643,6 +5662,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5654,6 +5675,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5665,6 +5688,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5686,6 +5711,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
@@ -5739,9 +5766,11 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Top_viewed_videos",
@@ -5749,6 +5778,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Start_date.selectedDate",
+                "moment().add(-2,'day')",
+                "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
