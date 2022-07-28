@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1298,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -3548,7 +3548,7 @@
                                       ],
                                       "isDisabled": false,
                                       "key": "6f5u04yw78",
-                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
+                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
                                       "isRequired": false,
                                       "defaultDate": "{{\nfunction monthStart() {\n    var d = new Date();\n    return new Date(d.setDate(1))\n}()\n}}",
                                       "rightColumn": 31,
@@ -3631,7 +3631,7 @@
                                       ],
                                       "isDisabled": false,
                                       "key": "6f5u04yw78",
-                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
+                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
                                       "isRequired": false,
                                       "defaultDate": "{{\nfunction endDAte() {\n    var d = new Date();\n    return new Date(d.setDate(d.getDate() - 1))\n}()\n}}",
                                       "rightColumn": 64,
@@ -5535,10 +5535,10 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().format(\"YYYY-MM-01 00:00:00\")",
+                "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD 23:59:59\")"
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -5549,11 +5549,11 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD HH:mm:ss\")",
                 "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")"
+                "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
               "timeoutInMillisecond": 10000
             },

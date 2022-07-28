@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 680,
+          "rightColumn": 1298,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1223,7 +1223,7 @@
                                   "buttonColor": "#03B365",
                                   "menuColor": "#03B365",
                                   "labelColor": "#FFFFFF",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "textSize": "PARAGRAPH2",
                                   "verticalAlignment": "CENTER"
                                 },
@@ -1300,7 +1300,7 @@
                                   "buttonColor": "#03B365",
                                   "menuColor": "#03B365",
                                   "labelColor": "#FFFFFF",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "textSize": "PARAGRAPH2",
                                   "verticalAlignment": "CENTER"
                                 }
@@ -1329,10 +1329,12 @@
                                 "step": 62,
                                 "status": 75,
                                 "channel": 203,
-                                "count_site": 221,
-                                "mtd": 231,
+                                "count_site": 137,
+                                "mtd": 226,
                                 "mtd_last_month": 212,
-                                "mtd_last_year": 191
+                                "mtd_last_year": 191,
+                                "vs_last_month": 226,
+                                "vs_last_year": 241
                               }
                             },
                             {
@@ -1617,10 +1619,12 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "channel": 274,
-                                "mtd": 248,
+                                "channel": 337,
+                                "mtd": 225,
                                 "mtd_last_month": 233,
-                                "mtd_last_year": 246
+                                "mtd_last_year": 246,
+                                "vs_last_month": 227,
+                                "vs_last_year": 239
                               }
                             },
                             {
@@ -1927,10 +1931,12 @@
                                 "step": 62,
                                 "status": 75,
                                 "channel": 209,
-                                "count_site": 200,
+                                "count_site": 128,
                                 "mtd": 227,
                                 "mtd_last_month": 233,
-                                "mtd_last_year": 182
+                                "mtd_last_year": 182,
+                                "vs_last_month": 226,
+                                "vs_last_year": 241
                               }
                             },
                             {
@@ -2223,9 +2229,11 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "channel": 159,
-                                "mtd": 146,
-                                "mtd_last_month": 135
+                                "channel": 338,
+                                "mtd": 224,
+                                "mtd_last_month": 135,
+                                "vs_last_month": 226,
+                                "vs_last_year": 244
                               }
                             },
                             {
@@ -4155,7 +4163,7 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "video_title": 506
+                                "video_title": 486
                               }
                             },
                             {
@@ -4409,9 +4417,10 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "channel": 201,
+                                "channel": 257,
                                 "views": 250,
-                                "watch_hrs": 226
+                                "watch_hrs": 226,
+                                "month": 228
                               }
                             },
                             {
@@ -4686,11 +4695,11 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "month": 85,
+                                "month": 122,
                                 "count": 106,
                                 "watch_hrs": 229,
-                                "channel": 271,
-                                "views": 175
+                                "channel": 259,
+                                "views": 250
                               }
                             },
                             {
