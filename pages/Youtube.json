@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1298,
+          "rightColumn": 680,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -2602,7 +2602,7 @@
                                       "onDateSelected": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\n\tAll_Videos_views.run();\n\tNew_videos_view.run();\n\tChannel_total_videos.run();\n\tChannel_new_videos.run();\n})() }}",
                                       "isRequired": false,
                                       "rightColumn": 32,
-                                      "defaultDate": "{{\nfunction monthStart() {\n    var d = new Date();\n    return new Date(d.setDate(1))\n}()\n}}",
+                                      "defaultDate": "{{\nfunction monthStart() {\n\tconst d = new Date();\n    if(d.getDay() == 1){\n\t\t\treturn new Date(d.getFullYear(), d.getMonth() - 1, 1)}\n\telse{\n\t\treturn new Date(d.setDate(1))\n\t}\n}()\n}}",
                                       "widgetId": "qcpese7c48",
                                       "isVisible": true,
                                       "datePickerType": "DATE_PICKER",
