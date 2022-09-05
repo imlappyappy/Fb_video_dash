@@ -14,7 +14,7 @@
     },
     "pageId": "Youtube",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT Date_trunc('Month', date)\tAS timestamp, \nsum(cast(views as decimal)) as COUNT_prevMonth\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().add(-1,'month').format(\"YYYY-MM-01\")}}':: date\n  \t\tAND date <= date_trunc('month', now())::date - 1\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"

@@ -14,7 +14,7 @@
     },
     "pageId": "Youtube",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "with CTE_channel_All as (\n\tselect channel_display_name AS channel,\n(case EXTRACT(month FROM date_trunc('month',time_published)) when '1' THEN 'Jan'\n\t\t\t\twhen '2' THEN 'Feb'\n\t\t\t\twhen '3' THEN 'Mar'\n\t\t\t\twhen '4' THEN 'Apr'\n\t\t\t\twhen '5' THEN 'May'\n\t\t\t\twhen '6' THEN 'June'\n\t\t\t\twhen '7' THEN 'July'\n\t\t\t\twhen '8' THEN 'Aug'\n\t\t\t\twhen '9' THEN 'Sept'\n\t\t\t\twhen '10' THEN 'Oct'\n\t\t\t\twhen '11' THEN 'Nov'\n\t\t\t\twhen '12' THEN 'Dec'\n\t\t\t\tEND) as Month,\ncount(DISTINCT(video_title)) as count, \nSUM(views) as Views,\nROUND(SUM(watch_time_hours),2) as Watch_Hrs,\nSUM(estimated_youtube_ad_revenue) as Revenue\nFROM public.smg_dmp_youtube_dashboard_unq_view\nwhere time_published >= '{{Start_date.selectedDate}}':: date\n  AND time_published <= '{{End_date.selectedDate}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\ngroup by date_trunc('month',time_published),channel\norder by Views DESC)\nSELECT * FROM(\nselect CTE_channel_All.channel,CTE_channel_All.Month,CTE_channel_All.count,CTE_channel_All.Views,CTE_channel_All.Watch_Hrs,CTE_channel_All.Revenue\nfrom CTE_channel_All \nORDER BY CTE_channel_All.channel\n) AS T\nUNION ALL\nselect 'Total','Month',sum(count),sum(Views),sum(Watch_Hrs),sum(Revenue)\nfrom CTE_channel_All;"

@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 680,
+          "rightColumn": 677,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -2602,7 +2602,7 @@
                                       "onDateSelected": "{{ ( () => {\n\tTotal_video_count.run();\n\tTotal_video_length.run();\n\tTotal_watch_hrs.run();\n\tTotal_view_count.run();\n\tRunning_View.run();\nPercentage_of_video_on_channel.run();\tpercentage_watch_category.run();\npercentage_watch_channelwise.run();\ntrending_category.run();\ntrending_channels.run();\ttotal_view_categorywise.run();\tTotal_views_channelwise.run();Total_Published_video_category.run();\tTotal_published_videos_channel.run();\nTop_10_video_by_watch_hrs.run();\n\tTop_10_video_viewwise.run();\n\tAll_Videos_views.run();\n\tNew_videos_view.run();\n\tChannel_total_videos.run();\n\tChannel_new_videos.run();\n})() }}",
                                       "isRequired": false,
                                       "rightColumn": 32,
-                                      "defaultDate": "{{\nfunction monthStart() {\n\tconst d = new Date();\n    if(d.getDay() == 1 || d.getDay() == 2 || d.getDay() == 3){\n\t\t\treturn new Date(d.getFullYear(), d.getMonth() - 1, 1)}\n\telse{\n\t\treturn new Date(d.setDate(1))\n\t}\n}()\n}}",
+                                      "defaultDate": "{{\nfunction monthStart() {\n\tconst d = new Date();\n\t\treturn new Date(d.setDate(1))\n}()\n}}",
                                       "widgetId": "qcpese7c48",
                                       "isVisible": true,
                                       "datePickerType": "DATE_PICKER",
@@ -5212,7 +5212,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Channel_total_videos",
@@ -5224,7 +5224,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Daily_change_data",
@@ -5248,7 +5248,7 @@
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
                 "moment().add(-1, 'year').format(\"YYYY-01-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Last_year_month",
@@ -5259,7 +5259,7 @@
                 "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_MTD_vs_ALL_videos_views",
@@ -5287,7 +5287,7 @@
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
                 "moment().add(-1,\"year\").format(\"YYYY-01-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_MTD_vs_New_videos_views",
@@ -5301,7 +5301,7 @@
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
                 "moment().add(-1,\"year\").format(\"YYYY-01-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_MTD_vs_new_watchhrs",
@@ -5315,7 +5315,7 @@
                 "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
                 "moment().add(-1,\"year\").format(\"YYYY-01-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_New_videos_view",
@@ -5327,7 +5327,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Prev_month_data",
@@ -5336,7 +5336,7 @@
               "jsonPathKeys": [
                 "moment().add(-1,'month').format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Total_video_count",
@@ -5432,7 +5432,7 @@
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
                 "moment().format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Current_year_data",
@@ -5444,7 +5444,7 @@
                 "moment()",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Youtube_Percentage_of_video_on_channel",
