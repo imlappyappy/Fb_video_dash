@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Date_trunc('day', date)\tAS timestamp, \nsum(cast(views as decimal)) as Today_data\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().add(-1,'day')}}':: date\n  \t\tAND date <= '{{moment()}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
+      "body": "SELECT Date_trunc('day', date)\tAS timestamp, \nsum(cast(views as decimal)) as Today_data\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{new Date(new Date().setDate(new Date().getDate()-1))}}':: date\n  \t\tAND date <= '{{new Date()}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -31,8 +31,8 @@
     "jsonPathKeys": [
       "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
       "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
-      "moment()",
-      "moment().add(-1,'day')"
+      "new Date()",
+      "new Date(new Date().setDate(new Date().getDate()-1))"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
