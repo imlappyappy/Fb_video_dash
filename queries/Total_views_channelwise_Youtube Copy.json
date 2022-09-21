@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Top_10_video_by_watch_hrs",
+    "name": "Total_views_channelwise",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,12 +12,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Youtube",
+    "pageId": "Youtube Copy",
     "actionConfiguration": {
-      "timeoutInMillisecond": 20000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT video_title AS video_title,\n       sum(watch_time_hours) AS watch_time_hours\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date >= '{{Start_date.selectedDate}}':: date\n  AND date <= '{{End_date.selectedDate}}':: date\n\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY video_title\nORDER BY watch_time_hours DESC\nLIMIT 10;"
+      "body": "SELECT channel_display_name AS channel_display_name,\n       SUM(views) AS views_channel\nFROM public.smg_dmp_youtube_dashboard_unq_view\nWHERE date >= '{{Start_date.selectedDate}}':: date\n  AND date <= '{{End_date.selectedDate}}':: date\n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY channel_display_name\nORDER BY views_channel DESC;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -30,7 +30,6 @@
     "messages": [],
     "jsonPathKeys": [
       "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
-      "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
       "End_date.selectedDate",
       "Start_date.selectedDate"
     ],
@@ -39,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Youtube_Top_10_video_by_watch_hrs",
+  "id": "Youtube Copy_Total_views_channelwise",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_62a98acf4c1f4b56d4d33d2f"
+  "gitSyncId": "62837f843cd70e097b62341a_632a92bc9f7e78062d807c52"
 }

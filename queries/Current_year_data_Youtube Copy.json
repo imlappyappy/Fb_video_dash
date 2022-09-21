@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Current_month_data",
+    "name": "Current_year_data",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,12 +12,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Youtube",
+    "pageId": "Youtube Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 20000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Date_trunc('Month', date)\tAS timestamp,\nsum(cast(views as decimal)) as COUNT_currentMonth\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().format(\"YYYY-MM-01\")}}':: date\n  \t\tAND date <= '{{moment()}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
+      "body": "SELECT Date_trunc('year', date)\tAS timestamp, \nsum(cast(views as decimal)) as COUNT_year\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{moment().format(\"YYYY-01-01\")}}':: date\n  \t\tAND date <= '{{moment()}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
@@ -32,14 +32,14 @@
       "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
       "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
       "moment()",
-      "moment().format(\"YYYY-MM-01\")"
+      "moment().format(\"YYYY-01-01\")"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Youtube_Current_month_data",
+  "id": "Youtube Copy_Current_year_data",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_62a98acf4c1f4b56d4d33d33"
+  "gitSyncId": "62837f843cd70e097b62341a_632a92bc9f7e78062d807c58"
 }

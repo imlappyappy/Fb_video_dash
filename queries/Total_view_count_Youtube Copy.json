@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Daily_data_view",
+    "name": "Total_view_count",
     "datasource": {
       "pluginId": "postgres-plugin",
       "messages": [],
@@ -12,14 +12,14 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Youtube",
+    "pageId": "Youtube Copy",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Date_trunc('day', date)\tAS timestamp, \nsum(cast(views as decimal)) as Today_data\nFROM public.\"smg_dmp_youtube_dashboard_unq_view\"\nwhere date >= '{{new Date(new Date().setDate(new Date().getDate()-1))}}':: date\n  \t\tAND date <= '{{new Date()}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\nGROUP BY timestamp\norder by timestamp desc\nlimit 1;"
+      "body": "SELECT sum(views) AS views\nFROM public.smg_dmp_youtube_dashboard_unq_view WHERE date >= '{{Start_date.selectedDate}}':: date\n  AND date <= '{{End_date.selectedDate}}':: date\n\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}};"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,15 +31,15 @@
     "jsonPathKeys": [
       "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"",
       "Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"",
-      "new Date()",
-      "new Date(new Date().setDate(new Date().getDate()-1))"
+      "End_date.selectedDate",
+      "Start_date.selectedDate"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Youtube_Daily_data_view",
+  "id": "Youtube Copy_Total_view_count",
   "deleted": false,
-  "gitSyncId": "62837f843cd70e097b62341a_62a98acf4c1f4b56d4d33d54"
+  "gitSyncId": "62837f843cd70e097b62341a_632a92bc9f7e78062d807c57"
 }
