@@ -14,7 +14,7 @@
     },
     "pageId": "Facebook",
     "actionConfiguration": {
-      "timeoutInMillisecond": 20000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "with CTE_mtd as (\n\tSELECT DATE_TRUNC('day', view_date) AS timestamp,\n    SUM(cast(total_video_views as decimal)) as Total_video_view,\n\tLAG(SUM(cast(total_video_views as decimal))) OVER (ORDER BY DATE_TRUNC('day', view_date)) AS previous_day,\n\tSUM(cast(total_video_views as decimal)) - LAG(SUM(cast(total_video_views as decimal)))\n    OVER (ORDER BY DATE_TRUNC('day', view_date)) AS difference_previous_day\t   \n\tFROM public.\"smg_dmp_fb_video_dashboard_unq\"\n\tWHERE view_date >= '{{Start_date.selectedDate}}':: date - interval '1 day'\n  AND view_date <= '{{End_date.selectedDate}}':: date\n\tAND name like {{Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\"}}\n\tand name is not null\n\tGROUP BY timestamp)\nselect CTE_mtd.timestamp,CTE_mtd.difference_previous_day from CTE_mtd\tORDER BY CTE_mtd.timestamp"

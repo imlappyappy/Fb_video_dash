@@ -3559,7 +3559,7 @@
                                       ],
                                       "isDisabled": false,
                                       "key": "6f5u04yw78",
-                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
+                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
                                       "isRequired": false,
                                       "defaultDate": "{{\nfunction monthStart() {\n\tconst d = new Date();\nreturn (d.setDate(1))\n}()\n}}",
                                       "rightColumn": 31,
@@ -3642,7 +3642,7 @@
                                       ],
                                       "isDisabled": false,
                                       "key": "6f5u04yw78",
-                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tGender_count_viewer.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
+                                      "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
                                       "isRequired": false,
                                       "defaultDate": "{{\nfunction endDAte() {\n    var d = new Date();\n    return new Date(d.setDate(d.getDate() - 1))\n}()\n}}",
                                       "rightColumn": 64,
@@ -5464,7 +5464,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 10000
             },
             {
               "id": "Facebook_Channel_New_Videos",
@@ -5490,7 +5490,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Last_Year_view",
@@ -5522,7 +5522,7 @@
                 "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 10000
             },
             {
               "id": "Facebook_MTD_vs_All_watchhrs",
@@ -5546,6 +5546,7 @@
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
                 "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
                 "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
               "timeoutInMillisecond": 10000
@@ -5597,7 +5598,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Total_anger_count",
@@ -5610,7 +5611,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Total_comment_count",
@@ -5623,7 +5624,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 10000
             },
             {
               "id": "Facebook_Total_haha_count",
@@ -5636,7 +5637,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 10000
             },
             {
               "id": "Facebook_Total_like_Count",
@@ -5675,7 +5676,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Total_sorry_count",
@@ -5688,7 +5689,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Total_wow_count",
@@ -5701,7 +5702,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Yesterday_view_data",
@@ -5766,7 +5767,7 @@
                 "moment().add(-1, 'day')",
                 "moment().add(-2, 'day')"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Top_trending_domain",
@@ -5778,7 +5779,7 @@
                 "moment().add(-1,'day')",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Top_viewed_videos",
@@ -5791,7 +5792,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 10000
             }
           ]
         ],

@@ -2230,7 +2230,7 @@
                                 "step": 62,
                                 "status": 75,
                                 "channel": 338,
-                                "mtd": 224,
+                                "mtd": 211,
                                 "mtd_last_month": 135,
                                 "vs_last_month": 226,
                                 "vs_last_year": 244
@@ -3887,7 +3887,7 @@
                                 "channel_display_name": 151,
                                 "category": 114,
                                 "total_video_views": 154,
-                                "video_title": 484,
+                                "video_title": 494,
                                 "time_published": 152
                               }
                             },
