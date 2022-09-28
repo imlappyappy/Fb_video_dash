@@ -5464,7 +5464,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Channel_New_Videos",
@@ -5477,7 +5477,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Channel_total_views",
@@ -5522,7 +5522,7 @@
                 "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_MTD_vs_All_watchhrs",
@@ -5535,7 +5535,7 @@
                 "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_MTD_vs_New_videos_views",
@@ -5549,7 +5549,7 @@
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
                 "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_MTD_vs_new_watchhrs",
@@ -5564,7 +5564,7 @@
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
                 "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_New_Videos_Views",
@@ -5576,7 +5576,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Prev_month_data",
@@ -5585,7 +5585,7 @@
               "jsonPathKeys": [
                 "moment().add(-1,'month').format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Sum_total_view",
@@ -5737,7 +5737,7 @@
                 "moment().add(-1,'day')",
                 "moment().format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Current_year_view",
@@ -5757,7 +5757,7 @@
                 "Start_date.selectedDate",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Today_view_data",

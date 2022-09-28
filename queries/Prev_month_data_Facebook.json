@@ -14,7 +14,7 @@
     },
     "pageId": "Facebook",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "with CTE_sumtotal as (\n\tSELECT video_id,created_time,\n\tcast(total_video_views as decimal) as total_video_views\n\tFROM public.smg_dmp_fb_video_dashboard_unq_view \n\tWHERE view_date = date_trunc('month', now())::date - 1\n\tgroup by video_id,created_time,total_video_views),\nCTE_view_date as (\n\tSELECT video_id,created_time,\n\tcast(total_video_views as decimal) as total_video_views\n\tFROM public.smg_dmp_fb_video_dashboard_unq_view \n\tWHERE view_date = '{{moment().add(-1,'month').format(\"YYYY-MM-01\")}}':: date\ngroup by video_id,created_time,total_video_views)\nselect sum(CTE_sumtotal.Total_Video_Views-coalesce(CTE_view_date.Total_Video_Views,0)) as count_prevmonth \nfrom CTE_sumtotal full join CTE_view_date on CTE_sumtotal.video_id=CTE_view_date.video_id"
