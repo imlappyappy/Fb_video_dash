@@ -3644,7 +3644,7 @@
                                       "key": "6f5u04yw78",
                                       "onDateSelected": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\n\tPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}",
                                       "isRequired": false,
-                                      "defaultDate": "{{\nfunction endDAte() {\n    var d = new Date();\n    return new Date(d.setDate(d.getDate() - 1))\n}()\n}}",
+                                      "defaultDate": "{{\nfunction monthend() {\n\tconst d = new Date();\nreturn (d.setDate(12))\n}()\n}}",
                                       "rightColumn": 64,
                                       "widgetId": "i5dz1brhbe",
                                       "isVisible": true,
