@@ -5445,8 +5445,80 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Facebook_Current_month_Data",
+              "name": "Current_month_Data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().format(\"YYYY-MM-01\")"
+              ],
+              "timeoutInMillisecond": 15000
+            },
+            {
               "id": "Facebook_Domain_name",
               "name": "Domain_name",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_Last_Year_view",
+              "name": "Last_Year_view",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().add(-1, 'year').format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'year').format(\"YYYY-01-01\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_Last_year_month",
+              "name": "Last_year_month",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().add(-1,'year').format(\"YYYY-MM-01\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook_MTD_vs_ALL_videos_views",
+              "name": "MTD_vs_ALL_videos_views",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Facebook_MTD_vs_All_watchhrs",
+              "name": "MTD_vs_All_watchhrs",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Facebook_MTD_vs_New_videos_views",
+              "name": "MTD_vs_New_videos_views",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Facebook_MTD_vs_new_watchhrs",
+              "name": "MTD_vs_new_watchhrs",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Facebook_Prev_month_data",
+              "name": "Prev_month_data",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().add(-1,'month').format(\"YYYY-MM-01\")"
+              ],
+              "timeoutInMillisecond": 15000
+            },
+            {
+              "id": "Facebook_Yesterday_view_data",
+              "name": "Yesterday_view_data",
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
@@ -5490,81 +5562,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
-            },
-            {
-              "id": "Facebook_Last_Year_view",
-              "name": "Last_Year_view",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1, 'year').format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'year').format(\"YYYY-01-01\")"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Facebook_Last_year_month",
-              "name": "Last_year_month",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,'year').format(\"YYYY-MM-01\")"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Facebook_MTD_vs_ALL_videos_views",
-              "name": "MTD_vs_ALL_videos_views",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")"
-              ],
-              "timeoutInMillisecond": 15000
-            },
-            {
-              "id": "Facebook_MTD_vs_All_watchhrs",
-              "name": "MTD_vs_All_watchhrs",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")"
-              ],
-              "timeoutInMillisecond": 15000
-            },
-            {
-              "id": "Facebook_MTD_vs_New_videos_views",
-              "name": "MTD_vs_New_videos_views",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
-              ],
-              "timeoutInMillisecond": 15000
-            },
-            {
-              "id": "Facebook_MTD_vs_new_watchhrs",
-              "name": "MTD_vs_new_watchhrs",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
-                "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
-              ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 25000
             },
             {
               "id": "Facebook_New_Videos_Views",
@@ -5575,15 +5573,6 @@
                 "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
-              ],
-              "timeoutInMillisecond": 15000
-            },
-            {
-              "id": "Facebook_Prev_month_data",
-              "name": "Prev_month_data",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,'month').format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 15000
             },
@@ -5637,7 +5626,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_Total_like_Count",
@@ -5705,16 +5694,6 @@
               "timeoutInMillisecond": 15000
             },
             {
-              "id": "Facebook_Yesterday_view_data",
-              "name": "Yesterday_view_data",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-3, 'day')",
-                "moment().add(-2, 'day')"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Facebook_total_view_hrs",
               "name": "total_view_hrs",
               "pluginType": "DB",
@@ -5730,25 +5709,23 @@
           ],
           [
             {
-              "id": "Facebook_Current_month_Data",
-              "name": "Current_month_Data",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1,'day')",
-                "moment().format(\"YYYY-MM-01\")"
-              ],
-              "timeoutInMillisecond": 15000
-            },
-            {
               "id": "Facebook_Current_year_view",
               "name": "Current_year_view",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().format(\"YYYY-01-01\")",
-                "moment().add(-1, 'day')"
+                "moment().format(\"YYYY-01-01\")"
               ],
               "timeoutInMillisecond": 10000
             },
+            {
+              "id": "Facebook_Today_view_data",
+              "name": "Today_view_data",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 15000
+            }
+          ],
+          [
             {
               "id": "Facebook_Percentage_Watch_hrs_of_domain",
               "name": "Percentage_Watch_hrs_of_domain",
@@ -5756,16 +5733,6 @@
               "jsonPathKeys": [
                 "Start_date.selectedDate",
                 "End_date.selectedDate"
-              ],
-              "timeoutInMillisecond": 15000
-            },
-            {
-              "id": "Facebook_Today_view_data",
-              "name": "Today_view_data",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().add(-1, 'day')",
-                "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 15000
             },
