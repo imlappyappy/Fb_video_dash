@@ -5536,7 +5536,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Channel_New_Videos",
@@ -5549,7 +5549,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Channel_total_views",
@@ -5574,7 +5574,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Sum_total_view",
@@ -5587,7 +5587,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_anger_count",
@@ -5613,7 +5613,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_haha_count",
@@ -5626,7 +5626,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_like_Count",
@@ -5639,7 +5639,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_love_count",
@@ -5652,7 +5652,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_share_count",
@@ -5665,7 +5665,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_sorry_count",
@@ -5678,7 +5678,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 20000
             },
             {
               "id": "Facebook_Total_wow_count",
