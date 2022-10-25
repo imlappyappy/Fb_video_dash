@@ -5449,6 +5449,7 @@
               "name": "Current_month_Data",
               "pluginType": "DB",
               "jsonPathKeys": [
+                "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")"
               ],
               "timeoutInMillisecond": 15000
@@ -5483,28 +5484,55 @@
               "id": "Facebook_MTD_vs_ALL_videos_views",
               "name": "MTD_vs_ALL_videos_views",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'day')",
+                "moment().format(\"YYYY-MM-01\")"
+              ],
               "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_MTD_vs_All_watchhrs",
               "name": "MTD_vs_All_watchhrs",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'day')",
+                "moment().format(\"YYYY-MM-01\")"
+              ],
               "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_MTD_vs_New_videos_views",
               "name": "MTD_vs_New_videos_views",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
+              ],
               "timeoutInMillisecond": 15000
             },
             {
               "id": "Facebook_MTD_vs_new_watchhrs",
               "name": "MTD_vs_new_watchhrs",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
+                "moment().add(-1, 'day')",
+                "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
+                "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
+              ],
               "timeoutInMillisecond": 15000
             },
             {
@@ -5520,7 +5548,10 @@
               "id": "Facebook_Yesterday_view_data",
               "name": "Yesterday_view_data",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment().add(-3, 'day')",
+                "moment().add(-2, 'day')"
+              ],
               "timeoutInMillisecond": 10000
             }
           ],
@@ -5713,7 +5744,8 @@
               "name": "Current_year_view",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().format(\"YYYY-01-01\")"
+                "moment().format(\"YYYY-01-01\")",
+                "moment().add(-1, 'day')"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -5721,7 +5753,10 @@
               "id": "Facebook_Today_view_data",
               "name": "Today_view_data",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment().add(-1, 'day')",
+                "moment().add(-2, 'day')"
+              ],
               "timeoutInMillisecond": 15000
             }
           ],
