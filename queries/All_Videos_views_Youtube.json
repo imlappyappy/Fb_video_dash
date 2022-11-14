@@ -14,7 +14,7 @@
     },
     "pageId": "Youtube",
     "actionConfiguration": {
-      "timeoutInMillisecond": 15000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "select video_title,channel_display_name,\ntime_published,\nSUM(views) as Total_Video_Views,\nROUND(SUM(watch_time_hours),2) as Total_Watch_Hrs,\nSUM(estimated_youtube_ad_revenue) as Revenue\nFROM public.smg_dmp_youtube_dashboard_unq_view\nwhere date >= '{{Start_date.selectedDate}}':: date\n  AND date <= '{{End_date.selectedDate}}':: date\n\t\t\tAND channel_display_name like {{Channel_select.selectedOptionValue ? Channel_select.selectedOptionValue : \"%\"}} \n\tAND category like {{Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\"}}\ngroup by video_title,channel_display_name,time_published\norder by Total_Video_Views desc\nlimit 100"

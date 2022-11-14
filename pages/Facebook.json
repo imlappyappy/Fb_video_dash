@@ -3703,7 +3703,7 @@
                                       "parentId": "rigzv154cc",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\n\tGender_count_viewer.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}"
+                                      "onOptionChange": "{{ ( () => {\n\tSum_total_view.run();\n\ttotal_view_hrs.run();\n\tTotal_anger_count.run();\n\tTotal_comment_count.run();\n\tTotal_like_Count.run();\n\tTotal_love_count.run();\n\tTotal_haha_count.run();\n\tTotal_sorry_count.run();\n\tTotal_share_count.run();\n\tTotal_wow_count.run();\n\tTop_viewed_videos.run();\n\tTop_trending_domain.run();\nPercentage_Watch_hrs_of_domain.run();\nRunning_view_domainwise_.run();\n\tAll_Videos_Views.run();\n\tNew_Videos_Views.run();\n\tChannel_total_views.run();\n\tChannel_New_Videos.run();\n})() }}"
                                     }
                                   ],
                                   "key": "95h8vvjla6"
@@ -5462,7 +5462,7 @@
                 "moment().add(-2,'day')",
                 "moment().add(-1,'day')",
                 "End_date.selectedDate",
-                "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+                "Domain_select.selectedOptionValue"
               ],
               "timeoutInMillisecond": 60000
             },

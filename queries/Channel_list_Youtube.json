@@ -14,7 +14,7 @@
     },
     "pageId": "Youtube",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT Distinct(channel_display_name) as channel\nFROM public.smg_dmp_youtube_dashboard_unq_view order by channel Asc;"
