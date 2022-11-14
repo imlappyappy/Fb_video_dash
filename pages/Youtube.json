@@ -5422,7 +5422,7 @@
                 "moment().add(-5, 'day')",
                 "moment().add(-4, 'day')"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -5435,7 +5435,7 @@
                 "Start_date.selectedDate",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Youtube_trending_channels",
@@ -5446,7 +5446,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -5551,7 +5551,7 @@
                 "Start_date.selectedDate",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Youtube_percentage_watch_channelwise",
@@ -5562,7 +5562,7 @@
                 "End_date.selectedDate",
                 "Category_select.selectedOptionValue ? Category_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Youtube_total_view_categorywise",
@@ -5573,7 +5573,7 @@
                 "Start_date.selectedDate",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
