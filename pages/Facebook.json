@@ -5449,7 +5449,7 @@
               "name": "Domain_name",
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -5477,7 +5477,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Channel_total_views",
@@ -5490,7 +5490,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 25000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Last_Year_view",
@@ -5576,7 +5576,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Prev_month_data",
@@ -5598,7 +5598,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Total_anger_count",
@@ -5737,7 +5737,7 @@
                 "moment().add(-1, 'day')",
                 "moment().format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Current_year_view",
@@ -5747,7 +5747,7 @@
                 "moment().format(\"YYYY-01-01\")",
                 "moment().add(-1, 'day')"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Percentage_Watch_hrs_of_domain",
@@ -5757,7 +5757,7 @@
                 "Start_date.selectedDate",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Today_view_data",
@@ -5767,7 +5767,7 @@
                 "moment().add(-1, 'day')",
                 "moment().add(-2, 'day')"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Top_trending_domain",
@@ -5779,7 +5779,7 @@
                 "moment().add(-1,'day')",
                 "End_date.selectedDate"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Top_viewed_videos",

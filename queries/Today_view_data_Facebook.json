@@ -14,7 +14,7 @@
     },
     "pageId": "Facebook",
     "actionConfiguration": {
-      "timeoutInMillisecond": 15000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "with CTE_sumtotal as (SELECT video_id,created_time,\n\t\t\t\t\t\t\t\t\t\t\tcast(total_video_views as decimal) as total_video_views\nFROM public.smg_dmp_fb_video_dashboard_unq_view \nWHERE view_date = '{{moment().add(-1, 'day')}}':: date\n \tand name is not null\ngroup by video_id,created_time,total_video_views),\nCTE_view_date as (\n\tSELECT video_id,created_time,\n\tcast(total_video_views as decimal) as total_video_views\nFROM public.smg_dmp_fb_video_dashboard_unq_view \nWHERE view_date = '{{moment().add(-2, 'day')}}':: date\n\tand name is not null\ngroup by video_id,created_time,total_video_views)\nselect sum(CTE_sumtotal.Total_Video_Views-coalesce(CTE_view_date.Total_Video_Views,0)) as count_today \nfrom CTE_sumtotal full join CTE_view_date on CTE_sumtotal.video_id=CTE_view_date.video_id"

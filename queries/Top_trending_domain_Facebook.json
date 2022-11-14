@@ -14,7 +14,7 @@
     },
     "pageId": "Facebook",
     "actionConfiguration": {
-      "timeoutInMillisecond": 15000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "with CTE_sumtotal as (\n\tSELECT name,video_id,\n\tcast(total_video_views as decimal) as total_video_views\n\tFROM public.smg_dmp_fb_video_dashboard_unq_view \n\tWHERE case when '{{End_date.selectedDate}}':: date > '{{moment().add(-1,'day')}}':: date\n\t\tthen view_date = '{{moment().add(-1,'day')}}':: date \n\telse \n\t\tview_date = '{{End_date.selectedDate}}':: date end\nand name is not null),\nCTE_view_date as (\n\tSELECT name,video_id,created_time,\n\tcast(total_video_views as decimal) as total_video_views\n\tFROM public.smg_dmp_fb_video_dashboard_unq_view \n\tWHERE case when '{{Start_date.selectedDate}}':: date > '{{moment().add(-2,'day')}}':: date\n\t\tthen view_date = '{{moment().add(-1,'day')}}':: date \n\telse \n\t\tview_date = '{{Start_date.selectedDate}}':: date end\nand name is not null)\nselect CTE_sumtotal.name,\nsum(CTE_sumtotal.Total_Video_Views-coalesce(CTE_view_date.Total_Video_Views,0)) as total_video_view \nfrom CTE_sumtotal full join CTE_view_date on CTE_sumtotal.video_id=CTE_view_date.video_id\nwhere CTE_sumtotal.name is not null\ngroup by CTE_sumtotal.name\norder by total_video_view desc\nlimit 10;"
