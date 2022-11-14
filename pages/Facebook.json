@@ -5585,7 +5585,7 @@
               "jsonPathKeys": [
                 "moment().add(-1,'month').format(\"YYYY-MM-01\")"
               ],
-              "timeoutInMillisecond": 15000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Sum_total_view",
@@ -5637,7 +5637,7 @@
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
-              "timeoutInMillisecond": 20000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Facebook_Total_like_Count",
