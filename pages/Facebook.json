@@ -3712,7 +3712,7 @@
                                       "iconSVG": "/static/media/icon.cca02633.svg",
                                       "topRow": 14,
                                       "bottomRow": 18,
-                                      "tooltip": "Submit",
+                                      "tooltip": "",
                                       "parentRowSpace": 10,
                                       "type": "BUTTON_WIDGET",
                                       "hideCard": false,
@@ -5040,7 +5040,7 @@
                                       "dynamicBindingPathList": [],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "Total View ms",
+                                      "text": "Total Watch Hrs(ms)",
                                       "key": "y7gamxavn4",
                                       "rightColumn": 40,
                                       "textAlign": "LEFT",
@@ -5582,8 +5582,8 @@
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
+                "moment().format(\"YYYY-MM-01'T'HH:mm:ss.SSSZ\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD'T'HH:mm:ss.SSSZ\")"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5594,11 +5594,11 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD'T'HH:mm:ss.SSS'Z'\")",
                 "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
+                "moment().format(\"YYYY-MM-01'T'HH:mm:ss.SSS'Z'\")"
               ],
               "timeoutInMillisecond": 60000
             },
