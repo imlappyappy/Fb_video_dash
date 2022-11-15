@@ -5583,7 +5583,6 @@
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
                 "moment().format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
                 "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
               "timeoutInMillisecond": 60000

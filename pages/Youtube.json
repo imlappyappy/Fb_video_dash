@@ -5326,7 +5326,6 @@
                 "moment()",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
                 "moment().add(-1,\"year\").format(\"YYYY-01-01\")"
               ],
               "timeoutInMillisecond": 60000
@@ -5340,7 +5339,6 @@
                 "moment()",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1,\"month\").format(\"YYYY-MM-31\")",
                 "moment().add(-1,\"year\").format(\"YYYY-01-01\")"
               ],
               "timeoutInMillisecond": 60000
