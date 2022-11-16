@@ -3558,7 +3558,7 @@
                                       "key": "6f5u04yw78",
                                       "onDateSelected": "",
                                       "isRequired": false,
-                                      "defaultDate": "{{\nfunction monthStart() {\n\tconst d = new Date();\nreturn (d.setDate(1))\n}()\n}}",
+                                      "defaultDate": "{{\nfunction monthStart() {\n\tvar d = new Date(new Date());\nreturn new Date(d.setDate(1))\n}()\n}}",
                                       "rightColumn": 31,
                                       "widgetId": "x8rn1lynhq",
                                       "isVisible": true,
@@ -3568,7 +3568,7 @@
                                       "parentId": "rigzv154cc",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "timePrecision": "minute",
+                                      "timePrecision": "None",
                                       "firstDayOfWeek": 0,
                                       "closeOnSelection": true,
                                       "maxDate": "2121-12-31T18:29:00.000Z"
@@ -5508,10 +5508,10 @@
               "name": "Channel_New_Videos",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "moment().add(-2,'day')",
-                "moment().add(-1,'day')",
-                "End_date.selectedDate",
+                "moment().add(-2,'day').format(\"YYYY-MM-DD\")",
+                "End_date.selectedDate.substring(0,10)",
+                "Start_date.selectedDate.substring(0,10)",
+                "moment().add(-1,'day').format(\"YYYY-MM-DD\")",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
               ],
               "timeoutInMillisecond": 60000
@@ -5582,8 +5582,8 @@
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().format(\"YYYY-MM-01'T'HH:mm:ss.SSSZ\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD'T'HH:mm:ss.SSSZ\")"
+                "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5786,16 +5786,6 @@
               "timeoutInMillisecond": 60000
             },
             {
-              "id": "Facebook_Percentage_Watch_hrs_of_domain",
-              "name": "Percentage_Watch_hrs_of_domain",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Start_date.selectedDate",
-                "End_date.selectedDate"
-              ],
-              "timeoutInMillisecond": 60000
-            },
-            {
               "id": "Facebook_Today_view_data",
               "name": "Today_view_data",
               "pluginType": "DB",
@@ -5827,6 +5817,18 @@
                 "moment().add(-1,'day')",
                 "End_date.selectedDate",
                 "Domain_select.selectedOptionValue ? Domain_select.selectedOptionValue : \"%\""
+              ],
+              "timeoutInMillisecond": 60000
+            }
+          ],
+          [
+            {
+              "id": "Facebook_Percentage_Watch_hrs_of_domain",
+              "name": "Percentage_Watch_hrs_of_domain",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Start_date.selectedDate",
+                "End_date.selectedDate"
               ],
               "timeoutInMillisecond": 60000
             }
