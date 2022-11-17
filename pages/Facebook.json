@@ -5534,7 +5534,7 @@
               "name": "Last_Year_view",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'year').format(\"YYYY-MM-DD\")",
+                "moment().add(-1, 'year').add(-2,'day').format(\"YYYY-MM-DD\")",
                 "moment().add(-1, 'year').format(\"YYYY-01-01\")"
               ],
               "timeoutInMillisecond": 60000
