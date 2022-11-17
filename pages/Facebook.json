@@ -3641,7 +3641,7 @@
                                       "key": "6f5u04yw78",
                                       "onDateSelected": "",
                                       "isRequired": false,
-                                      "defaultDate": "{{\nfunction endDAte() {\n    var d = new Date(new Date());\n    return new Date(d.setDate(d.getDate() - 1))\n}()\n}}",
+                                      "defaultDate": "{{\nfunction endDAte() {\n    var d = new Date(new Date());\n    return new Date(d.setDate(d.getDate() - 2))\n}()\n}}",
                                       "rightColumn": 64,
                                       "widgetId": "i5dz1brhbe",
                                       "isVisible": true,
