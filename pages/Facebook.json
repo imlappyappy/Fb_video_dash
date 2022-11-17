@@ -5555,9 +5555,9 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")"
+                "moment().add(-1,\"year\").add(-2,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5568,9 +5568,9 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")"
+                "moment().add(-1,\"year\").add(-2,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5581,7 +5581,8 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1,\"year\").add(-1,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().add(-1,\"year\").add(-2,\"day\").format(\"YYYY-MM-DD\")",
+                "moment().add(-2, 'day').format(\"YYYY-MM-DD\")",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
               ],
@@ -5594,11 +5595,11 @@
               "jsonPathKeys": [
                 "moment().add(-1,\"month\").format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-01\")",
-                "moment().add(-1, 'day')",
+                "moment().add(-2, 'day').format(\"YYYY-MM-DD\")",
                 "moment().format(\"YYYY-MM-01\")",
                 "moment().add(-1,\"month\").format(\"YYYY-MM-30\")",
                 "moment().add(-1,\"year\").format(\"YYYY-MM-DD\")",
-                "moment().add(-1, 'day').format(\"YYYY-MM-DD\")"
+                "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5746,7 +5747,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().add(-3, 'day')",
-                "moment().add(-2, 'day')"
+                "moment().add(-4, 'day')"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5770,8 +5771,8 @@
               "name": "Current_month_Data",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'day')",
-                "moment().format(\"YYYY-MM-01\")"
+                "moment().format(\"YYYY-MM-01\")",
+                "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5781,7 +5782,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "moment().format(\"YYYY-01-01\")",
-                "moment().add(-1, 'day')"
+                "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 60000
             },
@@ -5790,7 +5791,7 @@
               "name": "Today_view_data",
               "pluginType": "DB",
               "jsonPathKeys": [
-                "moment().add(-1, 'day')",
+                "moment().add(-3, 'day')",
                 "moment().add(-2, 'day')"
               ],
               "timeoutInMillisecond": 60000
